@@ -11,3 +11,8 @@ SOURCES += \
 
 HEADERS += \
     mainwindow.h
+
+DISTFILES +=
+
+FORMS += \
+    mainwindow.ui

@@ -16,11 +16,10 @@ int main(int argc, char *argv[])
     outfile.close();
 
     QApplication app(argc, argv);
+    MainWindow *mainWindow = new MainWindow;
 
-    MainWindow mainWindow;
-    //mainWindow.showMaximized();
-    mainWindow.show();
 
+    mainWindow->show();
 
     return app.exec();
 }
