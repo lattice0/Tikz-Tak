@@ -1,6 +1,7 @@
 #include "windowaddcal.h"
 
-WindowAddCal::WindowAddCal()
+WindowAddCal::WindowAddCal(QWidget *parent)
+    : QDialog(parent)
 {
-
+    ui.setupUi(this);
 }

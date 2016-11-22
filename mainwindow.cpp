@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "windowaddcal.h"
 #include<QProcess>
 #include<QCoreApplication>
 #include<QMessageBox>
@@ -10,14 +11,15 @@ MainWindow::MainWindow(QWidget *parent)
 {
     setupUi(this);
     // Connect button signal to appropriate slot
-    connect(compileButton, SIGNAL (released()), this, SLOT (compileFile()));
-    connect(algumaCoisaButton, SIGNAL (released()), this, SLOT (algumaCoisa()));
+    //connect(compileButton, SIGNAL (released()), this, SLOT (compileFile()));
+    //connect(algumaCoisaButton, SIGNAL (released()), this, SLOT (algumaCoisa()));
+    connect(insertCalendarButton, SIGNAL (released()), this, SLOT (insertCalendar()));
 }
 
 void MainWindow::compileFile()
 {
     // change the text
-    compileButton->setText("Pronto!");
+    //compileButton->setText("Pronto!");
 
     QProcess *process = new QProcess(this);
     QString program = "pdflatex";
@@ -33,4 +35,10 @@ void MainWindow::algumaCoisa()
         this,
         tr("Tikz-TaK"),
         tr("Alguma coisa!") );
+}
+
+void MainWindow::insertCalendar()
+{
+   WindowAddCal* myWindow = new WindowAddCal();
+   myWindow->show();
 }

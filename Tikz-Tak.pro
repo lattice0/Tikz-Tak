@@ -7,12 +7,15 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    windowaddcal.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    windowaddcal.h
 
 DISTFILES +=
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    windowaddcal.ui
