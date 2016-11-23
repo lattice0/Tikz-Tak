@@ -6,59 +6,251 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>519</width>
+    <height>246</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-     </property>
-    </widget>
-   </item>
-  </layout>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>5</y>
+     <width>477</width>
+     <height>186</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="verticalSpacing">
+     <number>10</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="cursoLabel">
+      <property name="text">
+       <string>Curso</string>
+      </property>
+      <property name="buddy">
+       <cstring>form_curso</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="form_curso"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="disciplinaLabel">
+      <property name="text">
+       <string>Disciplina</string>
+      </property>
+      <property name="buddy">
+       <cstring>form_disciplina</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="form_disciplina"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="periodoLabel">
+      <property name="text">
+       <string>Período Letivo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <layout class="QHBoxLayout" name="periodo">
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetNoConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QDateEdit" name="form_periodoInicio">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+        <property name="date">
+         <date>
+          <year>2017</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="dash">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+        <property name="buddy">
+         <cstring>form_periodoFim</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="form_periodoFim">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+        <property name="date">
+         <date>
+          <year>2017</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="notasLabel">
+      <property name="text">
+       <string>Entrega de Notas</string>
+      </property>
+      <property name="buddy">
+       <cstring>form_notas</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QDateEdit" name="form_notas">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::UpDownArrows</enum>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="date">
+       <date>
+        <year>2017</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="aulasLabel">
+      <property name="text">
+       <string>Aulas em</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <layout class="QHBoxLayout" name="diasAula">
+      <item>
+       <widget class="QCheckBox" name="seg">
+        <property name="text">
+         <string>seg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="ter">
+        <property name="text">
+         <string>ter</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="qua">
+        <property name="text">
+         <string>qua</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="qui">
+        <property name="text">
+         <string>qui</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="sex">
+        <property name="text">
+         <string>sex</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="sab">
+        <property name="text">
+         <string>sáb</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="dom">
+        <property name="text">
+         <string>dom</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder>cursoLabel</zorder>
+   <zorder>form_curso</zorder>
+   <zorder>disciplinaLabel</zorder>
+   <zorder>form_disciplina</zorder>
+   <zorder>periodoLabel</zorder>
+   <zorder>notasLabel</zorder>
+   <zorder>aulasLabel</zorder>
+   <zorder>form_notas</zorder>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBoxOK">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>215</y>
+     <width>166</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>Dialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>Dialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
