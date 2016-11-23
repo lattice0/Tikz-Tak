@@ -1,0 +1,486 @@
+\ProvidesPackage{tikztak}[2016/02/17 Calendar for courses by Thiago de Melo. Updated 2016/11/05]
+
+\AtEndDocument{%
+	\pdfinfo{
+		/Title (TikZ-TaK (calendar) \version)
+		/Creator ()
+		%	/Producer (pdfTeX 1.40.0)
+		/Author (\string\124\string\150\string\151\string\141\string\147\string\157 \string\144\string\145 \string\115\string\145\string\154\string\157)
+		/Subject ()
+		/Keywords ()
+	}
+}
+
+\newcommand{\tikztak}{%
+	Ti\textit{k}Z-T\kern -.1667em\lower .5ex\hbox {A}\kern -.125emK\lower -1ex\hbox {\scriptsize(calendar)}%
+}
+
+\newcommand{\version}{0.1b}
+
+\@ifpackageloaded{geometry}%
+  {\geometry{landscape,a4paper,margin=1cm}}
+  {\RequirePackage[landscape,a4paper,margin=1cm]{geometry}}
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[brazil]{babel}
+\RequirePackage[brazil]{translator}
+\RequirePackage{etoolbox}
+
+%\IfFileExists{libertine.sty}%
+%  {\RequirePackage{libertine}}
+%  {}
+%  
+\@ifpackageloaded{amssymb}%
+  {}
+  {\RequirePackage{amssymb}}
+
+\newif\ifdisciplina@dia@end%\disciplina@dia@endfalse
+\newif\ifdisciplina@mes@end%\disciplina@mes@endfalse
+\newif\ifrer@mes@begin%\rer@mes@beginfalse
+\newif\ifrer@mes@end%\rer@mes@endfalse
+\newif\ifrer@dia@begin%\rer@dia@beginfalse
+\newif\ifrer@dia@end%\rer@dia@endfalse
+\newif\ifnotas@disciplina@mes%\notas@disciplina@mesfalse
+\newif\ifnotas@disciplina@dia%\notas@disciplina@diafalse
+\newif\ifnotas@rer@mes%\notas@rer@mesfalse
+\newif\ifnotas@rer@dia%\notas@rer@diafalse
+
+
+\newcounter{disciplina@ano}
+\newcounter{disciplina@mes@begin}
+\newcounter{disciplina@mes@end}
+\newcounter{disciplina@dia@begin}
+%\newcounter{disciplina@dia@begin@temp}
+\newcounter{disciplina@dia@end}
+%\newcounter{disciplina@dia@end@temp}
+
+\newcounter{rer@mes@begin}
+\newcounter{rer@mes@end}
+\newcounter{rer@dia@begin}
+%\newcounter{rer@dia@begin@temp}
+\newcounter{rer@dia@end}
+%\newcounter{rer@dia@end@temp}
+
+\newcounter{notas@disciplina@mes}
+\newcounter{notas@disciplina@dia}
+\newcounter{notas@rer@mes}
+\newcounter{notas@rer@dia}
+
+%\newcounter{prova@mes}
+%\newcounter{prova@dia}
+
+\newcounter{@aulas}
+\newcounter{@creditos}
+\newcounter{@carga}
+
+\newcounter{primeira@sexta}
+\newcounter{primeiro@sabado}
+
+\newcommand{\PrimeiraSexta}[1]{%
+  \setcounter{primeira@sexta}{#1}%
+  \setcounter{primeiro@sabado}{#1}%
+  \stepcounter{primeiro@sabado}%
+}
+
+\newcommand{\Zerar}{%
+\setcounter{disciplina@ano}{\the\year}
+\setcounter{disciplina@mes@begin}{1}
+\setcounter{disciplina@mes@end}{12}
+\setcounter{disciplina@dia@begin}{1}
+\setcounter{disciplina@dia@end}{31}
+%\setcounter{disciplina@dia@begin@temp}{\value{disciplina@dia@begin}}
+%\setcounter{disciplina@dia@end@temp}{\value{disciplina@dia@end}}
+\setcounter{rer@mes@begin}{\value{disciplina@mes@end}}
+\setcounter{rer@mes@end}{\value{rer@mes@begin}}
+\setcounter{rer@dia@begin}{\value{disciplina@dia@end}}
+\setcounter{rer@dia@end}{\value{rer@dia@begin}}
+\setcounter{notas@disciplina@mes}{\value{disciplina@mes@end}}
+\setcounter{notas@disciplina@dia}{\value{disciplina@dia@end}}
+%\setcounter{notas@mes@end}{\value{disciplina@mes@end}}
+%\setcounter{notas@dia@end}{\value{disciplina@dia@end}}
+\setcounter{notas@rer@mes}{\value{rer@mes@end}}
+\setcounter{notas@rer@dia}{\value{rer@dia@end}}
+%\setcounter{primeira@sexta@up}{1}
+%\setcounter{primeira@sexta@down}{1}
+%\setcounter{rer@mes@end}{\value{disciplina@mes@end}}
+%\setcounter{rer@dia@end}{\value{disciplina@mes@end}}
+\setcounter{primeira@sexta}{1}%
+\setcounter{primeiro@sabado}{2}%
+\setcounter{@aulas}{0}
+\setcounter{@carga}{\numexpr \the@aulas * \the@creditos\relax}
+%\stepcounter{primeiro@sabado}%
+\disciplina@dia@endfalse
+\disciplina@mes@endfalse
+\rer@mes@beginfalse
+\rer@mes@endfalse
+\rer@dia@beginfalse
+\rer@dia@endfalse
+\notas@disciplina@mesfalse
+\notas@disciplina@diafalse
+\notas@rer@mesfalse
+\notas@rer@diafalse
+\def\dias@prova{}
+\def\mais@feriados{}
+}
+%\newcommand{\Zerar*}{%
+%	\Zerar
+%	\setcounter{disciplina@ano}{\the\year}
+%}
+\Zerar
+
+
+
+%% \Aulas{<num>} quantia de aulas no período
+%%
+\newcommand{\NumeroDeAulas}[1]{%
+  \setcounter{@aulas}{#1}
+  \setcounter{@carga}{\numexpr \the@aulas * \the@creditos\relax}
+}
+%% \Creditos{<num>} quantia de créditos da disciplina
+%%
+\newcommand{\Creditos}[1]{%
+  \setcounter{@creditos}{#1}
+  \setcounter{@carga}{\numexpr \the@aulas * \the@creditos\relax}
+}
+
+%% \Disciplina{DiaBegin,DiaEnd,MesBegin,MesEnd}
+%%
+\newcommand*{\DisciplinaDiaBegin}[1]{%
+  \setcounter{disciplina@dia@begin}{#1}%
+%  \setcounter{disciplina@dia@begin@temp}{#1}%
+%  \addtocounter{disciplina@dia@begin@temp}{-1}%
+  \ifdisciplina@dia@end\else\setcounter{disciplina@dia@end}{#1}\fi%
+  \ifrer@dia@begin\else\setcounter{rer@dia@begin}{#1}\fi%
+  \ifrer@dia@end\else\setcounter{rer@dia@end}{#1}\fi%
+  \ifnotas@disciplina@dia\else\setcounter{notas@disciplina@dia}{#1}\fi%
+  \ifnotas@rer@dia\else\setcounter{notas@rer@dia}{#1}\fi%
+}
+\newcommand*{\DisciplinaDiaEnd}[1]{%
+  \disciplina@dia@endtrue%
+  \setcounter{disciplina@dia@end}{#1}%
+%  \setcounter{disciplina@dia@end@temp}{#1}%
+%  \stepcounter{disciplina@dia@end@temp}%
+  \ifrer@dia@begin\else\setcounter{rer@dia@begin}{#1}\fi%
+  \ifrer@dia@end\else\setcounter{rer@dia@end}{#1}\fi%
+  \ifnotas@disciplina@dia\else\setcounter{notas@disciplina@dia}{#1}\fi%
+  \ifnotas@rer@dia\else\setcounter{notas@rer@dia}{#1}\fi%
+}
+\newcommand*{\DisciplinaMesBegin}[1]{%
+  \setcounter{disciplina@mes@begin}{#1}%
+  \ifdisciplina@mes@end\else\setcounter{disciplina@mes@end}{#1}\fi%
+  \ifrer@mes@begin\else\setcounter{rer@mes@begin}{#1}\fi%
+  \ifrer@mes@end\else\setcounter{rer@mes@end}{#1}\fi%
+  \ifnotas@disciplina@mes\else\setcounter{notas@disciplina@mes}{#1}\fi%
+  \ifnotas@rer@mes\else\setcounter{notas@rer@mes}{#1}\fi%
+}
+\newcommand*{\DisciplinaMesEnd}[1]{%
+  \disciplina@mes@endtrue%
+  \setcounter{disciplina@mes@end}{#1}%
+  \ifrer@mes@begin\else\setcounter{rer@mes@begin}{#1}\fi%
+  \ifrer@mes@end\else\setcounter{rer@mes@end}{#1}\fi%
+  \ifnotas@disciplina@mes\else\setcounter{notas@disciplina@mes}{#1}\fi%
+  \ifnotas@rer@mes\else\setcounter{notas@rer@mes}{#1}\fi%
+}
+
+%%\PeriodoLetivo{dia}{mes}{dia}{mes}
+%%
+\newcommand{\PeriodoLetivo}[4]{
+  \DisciplinaDiaBegin{#1}
+  \DisciplinaMesBegin{#2}
+  \DisciplinaDiaEnd{#3}
+  \DisciplinaMesEnd{#4}
+}
+%%\NotasDisciplina{dia}{mes}
+%%
+\newcommand{\NotasDisciplina}[2]{
+  \NotasDisciplinaDia{#1}
+  \NotasDisciplinaMes{#2}
+}
+%%\PeriodoRER{dia}{mes}{dia}{mes}
+%%
+\newcommand{\PeriodoRER}[4]{
+  \RerDiaBegin{#1}
+  \RerMesBegin{#2}
+  \RerDiaEnd{#3}
+  \RerMesEnd{#4}
+}
+%%\NotasRER{dia}{mes}
+%%
+\newcommand{\NotasRER}[2]{
+  \NotasRerDia{#1}
+  \NotasRerMes{#2}
+}
+
+%% \Rer{DiaBegin,DiaEnd,MesBegin,MesEnd}
+%%
+\newcommand*{\RerDiaBegin}[1]{%
+  \rer@dia@begintrue\setcounter{rer@dia@begin}{#1}%
+  \ifrer@dia@end\else\setcounter{rer@dia@end}{#1}\fi%
+  \ifnotas@rer@dia\else\setcounter{notas@rer@dia}{#1}\fi%
+}
+\newcommand*{\RerDiaEnd}[1]{%
+  \rer@dia@endtrue\setcounter{rer@dia@end}{#1}%
+  \ifnotas@rer@dia\else\setcounter{notas@rer@dia}{#1}\fi%
+}
+\newcommand*{\RerMesBegin}[1]{%
+  \rer@mes@begintrue\setcounter{rer@mes@begin}{#1}%
+}
+\newcommand*{\RerMesEnd}[1]{%
+  \rer@mes@endtrue\setcounter{rer@mes@end}{#1}%
+  \ifnotas@rer@mes\else\setcounter{notas@rer@mes}{#1}\fi%
+}
+
+%% \Notas{DisciplinaDia,DisciplinaMes,RerDia,RerMes}
+%%
+\newcommand*{\NotasDisciplinaDia}[1]{%
+  \notas@disciplina@diatrue%
+  \setcounter{notas@disciplina@dia}{#1}%
+}
+\newcommand*{\NotasDisciplinaMes}[1]{%
+  \notas@disciplina@mestrue%
+  \setcounter{notas@disciplina@mes}{#1}%
+}
+\newcommand*{\NotasRerDia}[1]{%
+  \notas@rer@diatrue%
+  \setcounter{notas@rer@dia}{#1}%
+}
+\newcommand*{\NotasRerMes}[1]{%
+  \notas@rer@mestrue%
+  \setcounter{notas@rer@mes}{#1}%
+}
+
+%% dias da semana em inglês
+%%
+\def\segunda{Monday}
+\def\terca{Tuesday}
+\def\quarta{Wednesday}
+\def\quinta{Thursday}
+\def\sexta{Friday}
+\def\sabado{Saturday}
+\def\domingo{Sunday}
+
+%% \DiasDeAula{\segunda,\terca,\quarta,\quinta,\sexta,\sabado,\domingo}
+%%
+\newcommand*{\DiasDeAula}[1]{%
+ \def\@diasdeaula{#1}%
+}
+\DiasDeAula{}
+
+%%  \DiasDeProva
+%%
+\newcommand*{\DiasDeProva}[1]{%
+		\def\dias@prova{}%
+    \edef\lista@dias@prova{#1}%
+    \foreach \dia in \lista@dias@prova {%
+      \xappto\dias@prova{if (equals=\dia) [nodes={prova}]}%
+    }%
+}
+
+%% \Feriados
+%%
+\newcommand*{\MaisFeriados}[1]{%
+    \edef\lista@feriados{#1}%
+    \foreach \dia in \lista@feriados {%
+      \xappto\mais@feriados{if (equals=\dia) [nodes={feriado}]}%
+    }%
+}
+
+\def\disciplina@cal{disciplina}
+\def\disciplina@curso@cal{curso}
+\def\disciplina@dia@cal{ddd/ddd}
+\def\disciplina@hora@cal{hh--hh}
+
+\newcommand*{\Disciplina}[1]{\renewcommand*{\disciplina@cal}{#1}}
+\newcommand*{\Curso}[1]{\renewcommand*{\disciplina@curso@cal}{#1}}
+\newcommand*{\dia}[1]{\renewcommand*{\disciplina@dia@cal}{#1}}
+\newcommand*{\hora}[1]{\renewcommand*{\disciplina@hora@cal}{#1}}
+\newcommand*{\ano}[1]{\setcounter{disciplina@ano}{#1}}
+\ano{\the\year}
+
+%% título = ano - disciplina - curso (dia horário)
+\newcommand{\titulo}{%
+  {\huge\textsf{\textsl{\thedisciplina@ano\ \--- \disciplina@cal\ \--- \disciplina@curso@cal\ \textup{(}\disciplina@dia@cal\ \disciplina@hora@cal{}hs\textup{)}}}}%
+  \par\vskip 1ex
+}
+
+%% rodapé
+\newcommand{\rodape}{%
+\par\medskip
+\begin{tabular}[t]{r@{\ }l}
+\rotatebox[origin=c]{45}{{\color{prova@color}$\square$}} & Provas\\
+{\color{feriado@color}\Large$\times$} & Aulas Suspensas\\
+{\color{letivo@color}$\square$} {\color{rer@color}$\square$} & Entrega de notas
+\end{tabular}%
+\hfil%
+\begin{tabular}[t]{lr@{\ }c@{\ }ll}
+{\color{letivo@color}$\blacksquare$} Per\'iodo letivo: &  \thedisciplina@dia@begin/\thedisciplina@mes@begin& \--- & \thedisciplina@dia@end/\thedisciplina@mes@end & {\footnotesize(notas: \thenotas@disciplina@dia/\thenotas@disciplina@mes)}\\
+{\color{rer@color}$\blacksquare$} Per\'iodo RER: & \therer@dia@begin/\therer@mes@begin & \--- & \therer@dia@end/\therer@mes@end & {\footnotesize(notas: \thenotas@rer@dia/\thenotas@rer@mes)}
+\end{tabular}%
+\hfil%
+Carga: \the@aulas\ $\times$ \the@creditos\ $=$ \the@carga\hfil%
+\par\bigskip
+}
+
+%\newif\iftikz
+%\IfFileExists{ttikz.sty}%
+%  {\tikztrue}%
+%  {\tikzfalse}
+
+\RequirePackage{tikz}
+\usetikzlibrary{calendar,shapes,calc}%
+
+%% cores
+%%
+\colorlet{letivo@color}{green!80}
+\colorlet{letivo@color@bg}{white}
+\colorlet{aula@color}{letivo@color!65!black}
+\colorlet{rer@color}{orange!90!black}
+\colorlet{feriado@color}{red}
+\colorlet{prova@color}{blue}
+
+%% AND function
+\def\pgfcalendar@matchesfalse{\global\let\ifpgfcalendar@matches\iffalse}
+\def\pgfcalendar@matchestrue{\global\let\ifpgfcalendar@matches\iftrue}
+\pgfcalendar@matchesfalse
+\pgfqkeys{/pgf/calendar}{and/.code 2 args={%
+    \begingroup
+      \ifdate{#1}{\ifdate{#2}{\pgfcalendar@matchestrue}{}}{}%
+    \endgroup
+    \ifpgfcalendar@matches\pgfcalendarmatchestrue\pgfcalendar@matchesfalse\fi}}
+\pgfkeys{
+  /pgf/calendar/@day/.style={#1},
+  /pgf/calendar/day/.style={@day/.list/.expanded=#1},
+}
+
+%% node style usado em feriados e provas
+\tikzset{
+     feriado/.style={
+%        draw=feriado@color,
+%        thick,
+%        rounded corners,
+        font=\mdseries,
+        append after command={
+            [every edge/.append style={
+                shorten >=3pt,
+                shorten <=3pt,
+                feriado@color,
+                thick
+            }]
+           (\tikzlastnode.north west) edge (\tikzlastnode.south east)
+           (\tikzlastnode.south west) edge (\tikzlastnode.north east)
+        },
+    },
+    prova/.style={
+        draw=prova@color,
+        thick,
+        diamond,
+        inner sep=0pt,
+%        fill=white
+    }
+}
+%\def\splitdash#1-#2\relax{%
+%    % #1 : month
+%    % #2 : day
+%    % Do something with them, e.g. store them in macros.
+%    \setcounter{prova@mes}{#1}%
+%    \setcounter{prova@dia}{#2}%
+%}
+
+%\def\calkeys#1{\pgfkeys{/pgf/calendar/.cd,#1}}
+%\calkeys{
+%  my day list/.append style={equals=\@diasdeprova}
+%}
+%\foreach \v in {03-09,04-10}{
+%  \expandafter\splitdash\v\relax
+%\calkeys{
+%  my day list/.style={equals=\the\year-\prova@mes-\prova@dia}
+%}
+%%\calkeys{
+%%  my day list/.append style={equals=\the\year-05-09},
+%%}
+%}
+
+\newcommand{\GerarCalendario}{%
+\fontsize{12pt}{14pt}\selectfont
+\pagestyle{empty}\centering\sffamily
+\titulo%
+\begin{tikzpicture}[%
+  every day/.style={anchor=mid,opacity=.5,minimum width=2.5ex},%
+  every node/.style={inner sep=2pt,rectangle}%
+]
+\calendar (cal) [%
+  dates=\thedisciplina@ano-\thedisciplina@mes@begin-1 to%
+        \thedisciplina@ano-\therer@mes@end-last,%
+  month list,%
+  month label left,%
+  month text=\textcolor{black}{\%mt},%
+  month yshift=1.7em,%
+  day xshift=3.5ex,%
+%  name=cal,
+]
+%%
+%% período letivo
+if (between=\thedisciplina@ano-\thedisciplina@mes@begin-\thedisciplina@dia@begin and \thedisciplina@ano-\thedisciplina@mes@end-\thedisciplina@dia@end) [letivo@color,every day/.append style={opacity=1,fill=letivo@color@bg}]
+%%
+%% período RER
+\ifrer@dia@begin
+if (between=\thedisciplina@ano-\therer@mes@begin-\therer@dia@begin and \thedisciplina@ano-\therer@mes@end-\therer@dia@end) [rer@color,every day/.append style={opacity=1}] \fi
+%%
+%% dias de aula no período letivo
+if (and={between=\thedisciplina@ano-\thedisciplina@mes@begin-\thedisciplina@dia@begin and \thedisciplina@ano-\thedisciplina@mes@end-\thedisciplina@dia@end}{day={\@diasdeaula}}) [font=\bfseries,aula@color]
+%%
+%% entrega de notas letivo
+if (equals=\thedisciplina@ano-\thenotas@disciplina@mes-\thenotas@disciplina@dia) [every day/.append style={draw=letivo@color,fill=white,line width=1.2pt}]
+%%
+%% entrega de notas RER
+\ifnotas@rer@dia
+if (equals=\thedisciplina@ano-\thenotas@rer@mes-\thenotas@rer@dia) [every day/.append style={draw=rer@color,fill=white,line width=1.2pt}] \fi
+%%
+%% domingos
+if (Sunday) [every day/.append style={font=\slshape},red]
+%%
+%% feriados constantes
+if (
+  equals=01-01,
+  equals=04-21,
+  equals=05-01,
+  equals=06-24,
+  equals=07-09,
+  equals=09-07,
+  equals=10-12,
+  equals=10-28,
+  equals=11-02,
+  equals=11-15,
+  equals=11-20,
+  equals=12-25,
+) [nodes={feriado}]
+%%
+%% aulas suspensas
+\mais@feriados
+%%
+%% dias de provas
+\dias@prova
+;
+%%% linhas tracejadas verticais para fins de semana
+\node (up) at (%
+  $(cal-\thedisciplina@ano-\two@digits{\value{disciplina@mes@begin}}-\two@digits{\value{primeira@sexta}}.north east)!.5!(cal-\thedisciplina@ano-\two@digits{\value{disciplina@mes@begin}}-\two@digits{\value{primeiro@sabado}}.north west)$%
+) {};
+\node (down) at (%
+  {$(cal-\thedisciplina@ano-\two@digits{\value{disciplina@mes@begin}}-\two@digits{\value{primeira@sexta}}.north east)!.5!(cal-\thedisciplina@ano-\two@digits{\value{disciplina@mes@begin}}-\two@digits{\value{primeiro@sabado}}.north west)$}%
+  |-%
+  {$(cal-\thedisciplina@ano-\two@digits{\value{rer@mes@end}}-01.south east)!.5!(cal-\thedisciplina@ano-\two@digits{\value{rer@mes@end}}-02.south west)$}%
+) {};
+\foreach \i in {0,...,4}{%
+\draw[dashed]%
+  ([xshift=3.5*7*\i ex]up.center)%
+  --%
+  ([xshift=3.5*7*\i ex]down.center)
+%
+  ([xshift=3.5*7*\i ex + 7ex]up.center)%
+  --%
+  ([xshift=3.5*7*\i ex + 7ex]down.center)
+;
+}
+\end{tikzpicture}
+\rodape
+}

@@ -1,0 +1,1661 @@
+Trying to verify cryptographic signatures!
+Loading ./tlpkg/texlive.tlpdb
+Installing TeX Live 2016 from: . (verified)
+Platform: x86_64-linux => 'GNU/Linux on x86_64'
+Distribution: inst (compressed)
+Directory for temporary files: /tmp/LgiNoGzbDC
+Installer revision: 41225
+Database revision: 41282
+Settings:
+  TEXDIR: "/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive"
+  TEXMFCONFIG: "$TEXMFSYSCONFIG"
+  TEXMFHOME: "$TEXMFLOCAL"
+  TEXMFLOCAL: "/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-local"
+  TEXMFSYSCONFIG: "/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-config"
+  TEXMFSYSVAR: "/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var"
+  TEXMFVAR: "$TEXMFSYSVAR"
+  binary_amd64-freebsd: "0"
+  binary_amd64-netbsd: "0"
+  binary_i386-cygwin: "0"
+  binary_i386-freebsd: "0"
+  binary_i386-linux: "0"
+  binary_i386-netbsd: "0"
+  binary_i386-solaris: "0"
+  binary_sparc-solaris: "0"
+  binary_universal-darwin: "0"
+  binary_win32: "0"
+  binary_x86_64-cygwin: "0"
+  binary_x86_64-darwin: "0"
+  binary_x86_64-linux: "1"
+  binary_x86_64-solaris: "0"
+  collection-basic: "1"
+  collection-bibtexextra: "0"
+  collection-binextra: "0"
+  collection-context: "0"
+  collection-fontsextra: "0"
+  collection-fontsrecommended: "0"
+  collection-fontutils: "0"
+  collection-formatsextra: "0"
+  collection-games: "0"
+  collection-genericextra: "0"
+  collection-genericrecommended: "0"
+  collection-htmlxml: "0"
+  collection-humanities: "0"
+  collection-langafrican: "0"
+  collection-langarabic: "0"
+  collection-langchinese: "0"
+  collection-langcjk: "0"
+  collection-langcyrillic: "0"
+  collection-langczechslovak: "0"
+  collection-langenglish: "0"
+  collection-langeuropean: "0"
+  collection-langfrench: "0"
+  collection-langgerman: "0"
+  collection-langgreek: "0"
+  collection-langindic: "0"
+  collection-langitalian: "0"
+  collection-langjapanese: "0"
+  collection-langkorean: "0"
+  collection-langother: "0"
+  collection-langpolish: "0"
+  collection-langportuguese: "0"
+  collection-langspanish: "0"
+  collection-latex: "1"
+  collection-latexextra: "0"
+  collection-latexrecommended: "0"
+  collection-luatex: "0"
+  collection-mathextra: "0"
+  collection-metapost: "0"
+  collection-music: "0"
+  collection-omega: "0"
+  collection-pictures: "0"
+  collection-plainextra: "0"
+  collection-pstricks: "0"
+  collection-publishers: "0"
+  collection-science: "0"
+  collection-texworks: "0"
+  collection-wintools: "0"
+  collection-xetex: "0"
+  doc_splitting_supported: "1"
+  in_place: "0"
+  inst_platform: "x86_64-linux"
+  n_collections_available: "48"
+  n_collections_selected: "2"
+  n_systems_available: "14"
+  n_systems_selected: "1"
+  option_adjustrepo: "0"
+  option_autobackup: "1"
+  option_backupdir: "tlpkg/backups"
+  option_desktop_integration: "1"
+  option_doc: "0"
+  option_file_assocs: "1"
+  option_fmt: "1"
+  option_letter: "0"
+  option_menu_integration: "1"
+  option_path: "1"
+  option_post_code: "1"
+  option_src: "1"
+  option_sys_bin: "/usr/local/bin"
+  option_sys_info: "/usr/local/share/info"
+  option_sys_man: "/usr/local/share/man"
+  option_w32_multi_user: "1"
+  option_write18_restricted: "1"
+  page: "0"
+  portable: "1"
+  scheme-basic: "1"
+  scheme-context: "0"
+  scheme-full: "0"
+  scheme-gust: "0"
+  scheme-medium: "0"
+  scheme-minimal: "0"
+  scheme-small: "0"
+  scheme-tetex: "0"
+  scheme-xml: "0"
+  selected_scheme: "scheme-custom"
+  src_splitting_supported: "1"
+  this_platform: "x86_64-linux"
+  total_size: "76"
+Installing to: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive
+Installing [01/89, time/total: ??:??/??:??]: ae [76k]
+Installing [02/89, time/total: 00:00/00:00]: amscls [121k]
+Installing [03/89, time/total: 00:00/00:00]: amsfonts [3590k]
+Installing [04/89, time/total: 00:01/00:04]: amsmath [90k]
+Installing [05/89, time/total: 00:01/00:03]: babel [117k]
+Installing [06/89, time/total: 00:01/00:03]: babel-english [9k]
+Installing [07/89, time/total: 00:01/00:03]: babelbib [26k]
+Installing [08/89, time/total: 00:01/00:03]: bibtex [13k]
+Installing [09/89, time/total: 00:01/00:03]: bibtex.x86_64-linux [69k]
+Installing [10/89, time/total: 00:01/00:03]: carlisle [14k]
+Installing [11/89, time/total: 00:01/00:03]: cm [234k]
+Installing [12/89, time/total: 00:01/00:03]: collection-basic [1k]
+Installing [13/89, time/total: 00:01/00:03]: collection-latex [1k]
+Installing [14/89, time/total: 00:01/00:03]: colortbl [15k]
+Installing [15/89, time/total: 00:01/00:03]: dvipdfmx [27k]
+Installing [16/89, time/total: 00:01/00:03]: dvipdfmx-def [5k]
+Installing [17/89, time/total: 00:01/00:03]: dvipdfmx.x86_64-linux [2k]
+Installing [18/89, time/total: 00:01/00:03]: dvips [36k]
+Installing [19/89, time/total: 00:01/00:03]: dvips.x86_64-linux [137k]
+Installing [20/89, time/total: 00:01/00:03]: dvisvgm-def [3k]
+Installing [21/89, time/total: 00:01/00:03]: enctex [24k]
+Installing [22/89, time/total: 00:01/00:03]: etex [12k]
+Installing [23/89, time/total: 00:01/00:03]: etex-pkg [6k]
+Installing [24/89, time/total: 00:01/00:03]: fancyhdr [9k]
+Installing [25/89, time/total: 00:01/00:03]: fix2col [9k]
+Installing [26/89, time/total: 00:01/00:03]: geometry [41k]
+Installing [27/89, time/total: 00:01/00:03]: glyphlist [25k]
+Installing [28/89, time/total: 00:02/00:06]: graphics [57k]
+Installing [29/89, time/total: 00:02/00:06]: graphics-cfg [2k]
+Installing [30/89, time/total: 00:02/00:06]: gsftopk [4k]
+Installing [31/89, time/total: 00:02/00:06]: gsftopk.x86_64-linux [39k]
+Installing [32/89, time/total: 00:02/00:06]: hyperref [386k]
+Installing [33/89, time/total: 00:02/00:05]: hyph-utf8 [48k]
+Installing [34/89, time/total: 00:02/00:05]: hyphen-base [22k]
+Installing [35/89, time/total: 00:02/00:05]: ifluatex [10k]
+Installing [36/89, time/total: 00:02/00:05]: ifxetex [4k]
+Installing [37/89, time/total: 00:02/00:05]: knuth-lib [30k]
+Installing [38/89, time/total: 00:02/00:05]: knuth-local [23k]
+Installing [39/89, time/total: 00:02/00:05]: kpathsea [30k]
+Installing [40/89, time/total: 00:02/00:05]: kpathsea.x86_64-linux [45k]
+Installing [41/89, time/total: 00:02/00:05]: latex [652k]
+Installing [42/89, time/total: 00:03/00:07]: latex-bin [1k]
+Installing [43/89, time/total: 00:03/00:07]: latex-bin.x86_64-linux [1k]
+Installing [44/89, time/total: 00:03/00:07]: latex-fonts [18k]
+Installing [45/89, time/total: 00:03/00:07]: latexconfig [5k]
+Installing [46/89, time/total: 00:03/00:07]: ltxmisc [16k]
+Installing [47/89, time/total: 00:03/00:07]: lua-alt-getopt [2k]
+Installing [48/89, time/total: 00:03/00:07]: luatex [13k]
+Installing [49/89, time/total: 00:03/00:07]: luatex.x86_64-linux [5041k]
+Installing [50/89, time/total: 00:04/00:05]: makeindex [5k]
+Installing [51/89, time/total: 00:04/00:05]: makeindex.x86_64-linux [45k]
+Installing [52/89, time/total: 00:04/00:05]: metafont [33k]
+Installing [53/89, time/total: 00:04/00:05]: metafont.x86_64-linux [186k]
+Installing [54/89, time/total: 00:04/00:05]: mflogo [8k]
+Installing [55/89, time/total: 00:04/00:05]: mfnfss [19k]
+Installing [56/89, time/total: 00:04/00:05]: mfware [4k]
+Installing [57/89, time/total: 00:04/00:05]: mfware.x86_64-linux [115k]
+Installing [58/89, time/total: 00:04/00:05]: mptopdf [38k]
+Installing [59/89, time/total: 00:04/00:05]: mptopdf.x86_64-linux [1k]
+Installing [60/89, time/total: 00:04/00:05]: natbib [79k]
+Installing [61/89, time/total: 00:04/00:05]: oberdiek [712k]
+Installing [62/89, time/total: 00:05/00:06]: pdftex [36k]
+Installing [63/89, time/total: 00:05/00:06]: pdftex-def [14k]
+Installing [64/89, time/total: 00:05/00:06]: pdftex.x86_64-linux [751k]
+Installing [65/89, time/total: 00:05/00:05]: plain [59k]
+Installing [66/89, time/total: 00:05/00:05]: pslatex [7k]
+Installing [67/89, time/total: 00:05/00:05]: psnfss [28k]
+Installing [68/89, time/total: 00:05/00:05]: pspicture [8k]
+Installing [69/89, time/total: 00:05/00:05]: tetex [59k]
+Installing [70/89, time/total: 00:05/00:05]: tetex.x86_64-linux [1k]
+Installing [71/89, time/total: 00:05/00:05]: tex [1k]
+Installing [72/89, time/total: 00:05/00:05]: tex-ini-files [4k]
+Installing [73/89, time/total: 00:05/00:05]: tex.x86_64-linux [167k]
+Installing [74/89, time/total: 00:06/00:06]: texconfig [13k]
+Installing [75/89, time/total: 00:06/00:06]: texconfig.x86_64-linux [1k]
+Installing [76/89, time/total: 00:06/00:06]: texlive-common [1k]
+Installing [77/89, time/total: 00:06/00:06]: texlive-docindex [108k]
+Installing [78/89, time/total: 00:06/00:06]: texlive-en [1k]
+Installing [79/89, time/total: 00:06/00:06]: texlive-msg-translations [110k]
+Installing [80/89, time/total: 00:06/00:06]: texlive-scripts [65k]
+Installing [81/89, time/total: 00:06/00:06]: texlive-scripts.x86_64-linux [1k]
+Installing [82/89, time/total: 00:06/00:06]: texlive.infra [222k]
+Installing [83/89, time/total: 00:06/00:06]: texlive.infra.x86_64-linux [90k]
+Installing [84/89, time/total: 00:06/00:06]: tools [250k]
+Installing [85/89, time/total: 00:07/00:07]: unicode-data [209k]
+Installing [86/89, time/total: 00:07/00:07]: updmap-map [134k]
+Installing [87/89, time/total: 00:07/00:07]: url [6k]
+Installing [88/89, time/total: 00:07/00:07]: xdvi [7k]
+Installing [89/89, time/total: 00:07/00:07]: xdvi.x86_64-linux [485k]
+Time used for installing the packages: 00:08
+running mktexlsr /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist ...
+writing fmtutil.cnf to /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/fmtutil.cnf
+writing updmap.cfg to /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/updmap.cfg
+writing language.dat to /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config/language.dat
+writing language.def to /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config/language.def
+writing language.dat.lua to /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config/language.dat.lua
+running mktexlsr /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-config /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist ...
+running updmap-sys --nohash ...done
+updmap will read the following updmap.cfg files (in precedence order):
+  /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/updmap.cfg
+updmap may write changes to the following updmap.cfg file:
+  /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-config/web2c/updmap.cfg
+dvips output dir: "/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/fonts/map/dvips/updmap"
+pdftex output dir: "/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/fonts/map/pdftex/updmap"
+dvipdfmx output dir: "/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/fonts/map/dvipdfmx/updmap"
+
+updmap is creating new map files
+using the following configuration:
+  LW35 font names                  : URWkb (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/updmap.cfg)
+  prefer outlines                  : true (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/updmap.cfg)
+  texhash enabled                  : false
+  download standard fonts (dvips)  : true (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/updmap.cfg)
+  download standard fonts (pdftex) : true (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/updmap.cfg)
+  kanjiEmbed replacement string    : ipaex (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/updmap.cfg)
+  kanjiVariant replacement string  :  (default)
+  create a mapfile for pxdvi       : false (default)
+
+Scanning for LW35 support files  [  3 files]
+Scanning for MixedMap entries    [  6 files]
+Scanning for KanjiMap entries    [  0 files]
+Scanning for Map entries         [  7 files]
+
+Generating output for dvipdfmx...
+Generating output for ps2pk...
+Generating output for dvips...
+Generating output for pdftex...
+
+Files generated:
+  /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/fonts/map/dvips/updmap:
+       15848 2016-11-08 18:23:31 builtin35.map
+       21321 2016-11-08 18:23:31 download35.map
+       23995 2016-11-08 18:23:31 psfonts_pk.map
+       27846 2016-11-08 18:23:31 psfonts_t1.map
+       27841 2016-11-08 18:23:31 ps2pk.map
+          14 2016-11-08 18:23:31 psfonts.map -> psfonts_t1.map
+  /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/fonts/map/pdftex/updmap:
+       27848 2016-11-08 18:23:31 pdftex_dl14.map
+       26183 2016-11-08 18:23:31 pdftex_ndl14.map
+          15 2016-11-08 18:23:31 pdftex.map -> pdftex_dl14.map
+  /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/fonts/map/dvipdfmx/updmap:
+         371 2016-11-08 18:23:31 kanjix.map
+
+Transcript written on "/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/updmap.log".
+re-running mktexlsr /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-config ...
+pre-generating all format files, be patient...
+running fmtutil-sys --no-error-if-no-engine=luajittex,mfluajit --all ...done
+fmtutil: fmtutil is using the following fmtutil.cnf files (in precedence order):
+fmtutil:   /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/fmtutil.cnf
+fmtutil: fmtutil is using the following fmtutil.cnf file for writing changes:
+fmtutil:   /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-config/web2c/fmtutil.cnf
+fmtutil [INFO]: writing formats under /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c
+fmtutil [INFO]: --- remaking pdftex with pdftex
+fmtutil: running `pdftex -ini   -jobname=pdftex -progname=pdftex -translate-file=cp227.tcx *pdfetex.ini' ...
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (INITEX)
+ restricted \write18 enabled.
+ (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/cp227.tcx)
+entering extended mode
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/config/
+pdfetex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+ex.src
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/base/pl
+ain.tex Preloading the plain format: codes, registers, parameters, fonts,
+more fonts, macros, math definitions, output routines, hyphenation
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex [skipping from \patterns to end-of-file...]))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+exdefs.lib Skipping module "grouptypes"; Loading module "interactionmodes";
+Skipping module "nodetypes"; Skipping module "iftypes";)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config
+/language.def
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)) Augmenting the Plain TeX definitions: \tracingall;
+Adding new e-TeX definitions: \eTeX, \loggingall, \tracingnone,
+register allocation; extended register allocation; 
+Recycling: \addlanguage, \@nswer (not defined), \@sk, \b@dresponsetrue,
+\b@dresponsefalse, \ch@ckforyn, \mayber@cycle, \et@xabort, \et@xbuf,
+\et@xfmtsrc, \et@xfilehdr, \et@xinf, \et@xpatterns, \l@ngdefnfile, \n@xt,
+\p@rse (not defined), \pr@mpt (not defined), \pr@mptloop (not defined),
+\forcer@cycle, \usef@llback, \usef@llbacktrue, \usef@llbackfalse, 
+Retaining: \et@xerr, \et@xinput, \et@xlibhdr, \et@xmsg, \et@xtoks, \et@xwarn,
+\et@xl@@d, \et@xl@ad, \et@xload, \et@xlang, \et@xhash, \eTeX, \etexhdrchk,
+\etexstatus, \module, \uselanguage, \r@tain, \r@cycle,)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/config/
+pdftexmagfix.tex) )
+Beginning to dump on file pdftex.fmt
+ (preloaded format=pdftex 2016.11.8)
+2895 strings of total length 43944
+7960 memory locations dumped; current usage is 203&7321
+1263 multiletter control sequences
+\font\nullfont=nullfont
+\font\tenrm=cmr10
+\font\preloaded=cmr9
+\font\preloaded=cmr8
+\font\sevenrm=cmr7
+\font\preloaded=cmr6
+\font\fiverm=cmr5
+\font\teni=cmmi10
+\font\preloaded=cmmi9
+\font\preloaded=cmmi8
+\font\seveni=cmmi7
+\font\preloaded=cmmi6
+\font\fivei=cmmi5
+\font\tensy=cmsy10
+\font\preloaded=cmsy9
+\font\preloaded=cmsy8
+\font\sevensy=cmsy7
+\font\preloaded=cmsy6
+\font\fivesy=cmsy5
+\font\tenex=cmex10
+\font\preloaded=cmss10
+\font\preloaded=cmssq8
+\font\preloaded=cmssi10
+\font\preloaded=cmssqi8
+\font\tenbf=cmbx10
+\font\preloaded=cmbx9
+\font\preloaded=cmbx8
+\font\sevenbf=cmbx7
+\font\preloaded=cmbx6
+\font\fivebf=cmbx5
+\font\tentt=cmtt10
+\font\preloaded=cmtt9
+\font\preloaded=cmtt8
+\font\preloaded=cmsltt10
+\font\tensl=cmsl10
+\font\preloaded=cmsl9
+\font\preloaded=cmsl8
+\font\tenit=cmti10
+\font\preloaded=cmti9
+\font\preloaded=cmti8
+\font\preloaded=cmti7
+\font\preloaded=cmu10
+\font\preloaded=cmmib10
+\font\preloaded=cmbsy10
+\font\preloaded=cmcsc10
+\font\preloaded=cmssbx10
+\font\preloaded=cmdunh10
+\font\preloaded=cmr7 at 14.51799pt
+\font\preloaded=cmtt10 at 14.4pt
+\font\preloaded=cmssbx10 at 14.4pt
+\font\preloaded=manfnt
+14787 words of font info for 50 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 6075 has 181 ops out of 35111
+  181 for language 0
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+Transcript written on pdftex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/pdftex/pdftex.fmt installed.
+fmtutil [INFO]: --- remaking luajittex with luajittex
+fmtutil: running `luajittex -ini   -jobname=luajittex -progname=luajittex luatex.ini' ...
+This is LuajitTeX, Version 0.95.0 (TeX Live 2016)  (INITEX)
+ restricted system commands enabled.
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/luatex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/luatexconfig.tex
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/confi
+g/luatexiniconfig.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/unico
+de-data/load-unicode-data.tex 
+load-unicode-data.tex v1.4a (2016-02-21)
+Reading Unicode data
+# UnicodeData-8.0.0.txt
+# Downloaded 2015-12-01 09:00:00 GMT [JAW]
+)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/luatex/hyph-u
+tf8/etex.src
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/base/pl
+ain.tex Preloading the plain format: codes, registers, parameters, fonts,
+more fonts, macros, math definitions, output routines, hyphenation
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex [skipping from \patterns to end-of-file...]))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+exdefs.lib Skipping module "grouptypes"; Loading module "interactionmodes";
+Skipping module "nodetypes"; Skipping module "iftypes";)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config
+/language.def
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)) Augmenting the Plain TeX definitions: \tracingall;
+Adding new e-TeX definitions: \eTeX, \loggingall, \tracingnone,
+register allocation; extended register allocation; 
+Recycling: \addlanguage, \@nswer (not defined), \@sk, \b@dresponsetrue,
+\b@dresponsefalse, \ch@ckforyn, \mayber@cycle, \et@xabort, \et@xbuf,
+\et@xfmtsrc, \et@xfilehdr, \et@xinf, \et@xpatterns, \l@ngdefnfile, \n@xt,
+\p@rse (not defined), \pr@mpt (not defined), \pr@mptloop (not defined),
+\forcer@cycle, \usef@llback, \usef@llbacktrue, \usef@llbackfalse, 
+Retaining: \et@xerr, \et@xinput, \et@xlibhdr, \et@xmsg, \et@xtoks, \et@xwarn,
+\et@xl@@d, \et@xl@ad, \et@xload, \et@xlang, \et@xhash, \eTeX, \etexhdrchk,
+\etexstatus, \module, \uselanguage, \r@tain, \r@cycle,))
+Beginning to dump on file luajittex.fmt
+ (format=luajittex 2016.11.8)
+3127 strings using 10164 bytes
+68833 memory locations dumped; current usage is 155&7713
+1758 multiletter control sequences
+\font\nullfont=nullfont
+\font\tenrm=cmr10
+\font\preloaded=cmr9
+\font\preloaded=cmr8
+\font\sevenrm=cmr7
+\font\preloaded=cmr6
+\font\fiverm=cmr5
+\font\teni=cmmi10
+\font\preloaded=cmmi9
+\font\preloaded=cmmi8
+\font\seveni=cmmi7
+\font\preloaded=cmmi6
+\font\fivei=cmmi5
+\font\tensy=cmsy10
+\font\preloaded=cmsy9
+\font\preloaded=cmsy8
+\font\sevensy=cmsy7
+\font\preloaded=cmsy6
+\font\fivesy=cmsy5
+\font\tenex=cmex10
+\font\preloaded=cmss10
+\font\preloaded=cmssq8
+\font\preloaded=cmssi10
+\font\preloaded=cmssqi8
+\font\tenbf=cmbx10
+\font\preloaded=cmbx9
+\font\preloaded=cmbx8
+\font\sevenbf=cmbx7
+\font\preloaded=cmbx6
+\font\fivebf=cmbx5
+\font\tentt=cmtt10
+\font\preloaded=cmtt9
+\font\preloaded=cmtt8
+\font\preloaded=cmsltt10
+\font\tensl=cmsl10
+\font\preloaded=cmsl9
+\font\preloaded=cmsl8
+\font\tenit=cmti10
+\font\preloaded=cmti9
+\font\preloaded=cmti8
+\font\preloaded=cmti7
+\font\preloaded=cmu10
+\font\preloaded=cmmib10
+\font\preloaded=cmbsy10
+\font\preloaded=cmcsc10
+\font\preloaded=cmssbx10
+\font\preloaded=cmdunh10
+\font\preloaded=cmr7 at 14.51799pt
+\font\preloaded=cmtt10 at 14.4pt
+\font\preloaded=cmssbx10 at 14.4pt
+\font\preloaded=manfnt
+50 preloaded fonts
+warning  (pdf backend): no pages of output.
+Transcript written on luajittex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/luajittex/luajittex.fmt installed.
+fmtutil [INFO]: --- remaking luatex with luatex
+fmtutil: running `luatex -ini   -jobname=luatex -progname=luatex luatex.ini' ...
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (INITEX)
+ restricted system commands enabled.
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/luatex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/luatexconfig.tex
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/confi
+g/luatexiniconfig.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/unico
+de-data/load-unicode-data.tex 
+load-unicode-data.tex v1.4a (2016-02-21)
+Reading Unicode data
+# UnicodeData-8.0.0.txt
+# Downloaded 2015-12-01 09:00:00 GMT [JAW]
+)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/luatex/hyph-u
+tf8/etex.src
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/base/pl
+ain.tex Preloading the plain format: codes, registers, parameters, fonts,
+more fonts, macros, math definitions, output routines, hyphenation
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex [skipping from \patterns to end-of-file...]))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+exdefs.lib Skipping module "grouptypes"; Loading module "interactionmodes";
+Skipping module "nodetypes"; Skipping module "iftypes";)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config
+/language.def
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)) Augmenting the Plain TeX definitions: \tracingall;
+Adding new e-TeX definitions: \eTeX, \loggingall, \tracingnone,
+register allocation; extended register allocation; 
+Recycling: \addlanguage, \@nswer (not defined), \@sk, \b@dresponsetrue,
+\b@dresponsefalse, \ch@ckforyn, \mayber@cycle, \et@xabort, \et@xbuf,
+\et@xfmtsrc, \et@xfilehdr, \et@xinf, \et@xpatterns, \l@ngdefnfile, \n@xt,
+\p@rse (not defined), \pr@mpt (not defined), \pr@mptloop (not defined),
+\forcer@cycle, \usef@llback, \usef@llbacktrue, \usef@llbackfalse, 
+Retaining: \et@xerr, \et@xinput, \et@xlibhdr, \et@xmsg, \et@xtoks, \et@xwarn,
+\et@xl@@d, \et@xl@ad, \et@xload, \et@xlang, \et@xhash, \eTeX, \etexhdrchk,
+\etexstatus, \module, \uselanguage, \r@tain, \r@cycle,))
+Beginning to dump on file luatex.fmt
+ (format=luatex 2016.11.8)
+3127 strings using 10158 bytes
+68833 memory locations dumped; current usage is 155&7713
+1758 multiletter control sequences
+\font\nullfont=nullfont
+\font\tenrm=cmr10
+\font\preloaded=cmr9
+\font\preloaded=cmr8
+\font\sevenrm=cmr7
+\font\preloaded=cmr6
+\font\fiverm=cmr5
+\font\teni=cmmi10
+\font\preloaded=cmmi9
+\font\preloaded=cmmi8
+\font\seveni=cmmi7
+\font\preloaded=cmmi6
+\font\fivei=cmmi5
+\font\tensy=cmsy10
+\font\preloaded=cmsy9
+\font\preloaded=cmsy8
+\font\sevensy=cmsy7
+\font\preloaded=cmsy6
+\font\fivesy=cmsy5
+\font\tenex=cmex10
+\font\preloaded=cmss10
+\font\preloaded=cmssq8
+\font\preloaded=cmssi10
+\font\preloaded=cmssqi8
+\font\tenbf=cmbx10
+\font\preloaded=cmbx9
+\font\preloaded=cmbx8
+\font\sevenbf=cmbx7
+\font\preloaded=cmbx6
+\font\fivebf=cmbx5
+\font\tentt=cmtt10
+\font\preloaded=cmtt9
+\font\preloaded=cmtt8
+\font\preloaded=cmsltt10
+\font\tensl=cmsl10
+\font\preloaded=cmsl9
+\font\preloaded=cmsl8
+\font\tenit=cmti10
+\font\preloaded=cmti9
+\font\preloaded=cmti8
+\font\preloaded=cmti7
+\font\preloaded=cmu10
+\font\preloaded=cmmib10
+\font\preloaded=cmbsy10
+\font\preloaded=cmcsc10
+\font\preloaded=cmssbx10
+\font\preloaded=cmdunh10
+\font\preloaded=cmr7 at 14.51799pt
+\font\preloaded=cmtt10 at 14.4pt
+\font\preloaded=cmssbx10 at 14.4pt
+\font\preloaded=manfnt
+50 preloaded fonts
+warning  (pdf backend): no pages of output.
+Transcript written on luatex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/luatex/luatex.fmt installed.
+fmtutil [INFO]: --- remaking tex with tex
+fmtutil: running `tex -ini   -jobname=tex -progname=tex tex.ini' ...
+This is TeX, Version 3.14159265 (TeX Live 2016) (INITEX)
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/config/
+tex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/base/pl
+ain.tex Preloading the plain format: codes, registers, parameters, fonts,
+more fonts, macros, math definitions, output routines, hyphenation
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)) )
+Beginning to dump on file tex.fmt
+ (preloaded format=tex 2016.11.8)
+2027 strings of total length 29575
+4990 memory locations dumped; current usage is 110&4877
+926 multiletter control sequences
+\font\nullfont=nullfont
+\font\tenrm=cmr10
+\font\preloaded=cmr9
+\font\preloaded=cmr8
+\font\sevenrm=cmr7
+\font\preloaded=cmr6
+\font\fiverm=cmr5
+\font\teni=cmmi10
+\font\preloaded=cmmi9
+\font\preloaded=cmmi8
+\font\seveni=cmmi7
+\font\preloaded=cmmi6
+\font\fivei=cmmi5
+\font\tensy=cmsy10
+\font\preloaded=cmsy9
+\font\preloaded=cmsy8
+\font\sevensy=cmsy7
+\font\preloaded=cmsy6
+\font\fivesy=cmsy5
+\font\tenex=cmex10
+\font\preloaded=cmss10
+\font\preloaded=cmssq8
+\font\preloaded=cmssi10
+\font\preloaded=cmssqi8
+\font\tenbf=cmbx10
+\font\preloaded=cmbx9
+\font\preloaded=cmbx8
+\font\sevenbf=cmbx7
+\font\preloaded=cmbx6
+\font\fivebf=cmbx5
+\font\tentt=cmtt10
+\font\preloaded=cmtt9
+\font\preloaded=cmtt8
+\font\preloaded=cmsltt10
+\font\tensl=cmsl10
+\font\preloaded=cmsl9
+\font\preloaded=cmsl8
+\font\tenit=cmti10
+\font\preloaded=cmti9
+\font\preloaded=cmti8
+\font\preloaded=cmti7
+\font\preloaded=cmu10
+\font\preloaded=cmmib10
+\font\preloaded=cmbsy10
+\font\preloaded=cmcsc10
+\font\preloaded=cmssbx10
+\font\preloaded=cmdunh10
+\font\preloaded=cmr7 at 14.51799pt
+\font\preloaded=cmtt10 at 14.4pt
+\font\preloaded=cmssbx10 at 14.4pt
+\font\preloaded=manfnt
+14787 words of font info for 50 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 6075 has 181 ops out of 35111
+  181 for language 0
+No pages of output.
+Transcript written on tex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/tex/tex.fmt installed.
+fmtutil [INFO]: --- remaking mptopdf with pdftex
+fmtutil: running `pdftex -ini   -jobname=mptopdf -progname=context -translate-file=cp227.tcx mptopdf.tex' ...
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (INITEX)
+ restricted \write18 enabled.
+ (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/cp227.tcx)
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/conte
+xt/mptopdf/mptopdf.tex
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/context/base/
+mkii/syst-tex.mkii
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/base/pl
+ain.tex Preloading the plain format: codes, registers, parameters, fonts,
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+more fonts,
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping \font in plain
+skipping scaled \font in plain
+skipping scaled \font in plain
+skipping scaled \font in plain
+skipping \font in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \skewchar in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+skipping \textfont in plain
+skipping \textfont in plain
+skipping \textfont in plain
+skipping \scriptfont in plain
+skipping \scriptscriptfont in plain
+skipping \textfont in plain
+macros, math definitions,
+skipping used \tenex in plain
+output routines, hyphenation
+skipping \input in plain
+skipping \tenrm in plain
+))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/context/base/
+mkii/supp-mis.mkii
+loading : ConTeXt Support Macros / Miscellaneous (2004.10.26)
+)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/context/base/
+mkii/supp-pdf.mkii
+loading : ConTeXt Support Macros / PDF
+)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/context/base/
+mkii/supp-mpe.mkii
+loading : ConTeXt Support Macros / MPS extensions
+) )
+Beginning to dump on file mptopdf.fmt
+ (preloaded format=mptopdf 2016.11.8)
+3291 strings of total length 49394
+13893 memory locations dumped; current usage is 116&13746
+1664 multiletter control sequences
+\font\nullfont=nullfont
+0 words of font info for 0 preloaded fonts
+0 hyphenation exceptions
+Hyphenation trie of length 256 has 0 ops out of 35111
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+Transcript written on mptopdf.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/pdftex/mptopdf.fmt installed.
+fmtutil [INFO]: --- remaking lualatex with luatex
+fmtutil: running `luatex -ini   -jobname=lualatex -progname=lualatex lualatex.ini' ...
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (INITEX)
+ restricted system commands enabled.
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/lualatex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/luatexconfig.tex
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/la
+tex.ltx
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/te
+xsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, compatibility for TeX 2,  parameters,
+LaTeX2e <2016/03/31>
+hacks, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+nttext.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+nttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+lenc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/t1
+enc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1enc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+senc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/t1
+cmr.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmr.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmss.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+ntmath.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+ntmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+lcmm.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+scmsy.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+xcmex.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/uc
+mr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/pr
+eload.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/pr
+eload.ltx)) page nos., x-ref, environments, center, verbatim,
+math definitions, boxes, title, sectioning, contents, floats, footnotes,
+index, bibliography, output,  Unicode character data,
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/unico
+de-data/load-unicode-data.tex 
+load-unicode-data.tex v1.4a (2016-02-21)
+Reading Unicode data
+# UnicodeData-8.0.0.txt
+# Downloaded 2015-12-01 09:00:00 GMT [JAW]
+)
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/hyphen.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/luababel.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/switch.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex))
+))
+Beginning to dump on file lualatex.fmt
+ (format=lualatex 2016.11.8)
+4881 strings using 33623 bytes
+153619 memory locations dumped; current usage is 174&48946
+3672 multiletter control sequences
+\font\nullfont=nullfont
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+14 preloaded fonts
+warning  (pdf backend): no pages of output.
+Transcript written on lualatex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/luatex/lualatex.fmt installed.
+fmtutil [INFO]: --- remaking pdflatex with pdftex
+fmtutil: running `pdftex -ini   -jobname=pdflatex -progname=pdflatex -translate-file=cp227.tcx *pdflatex.ini' ...
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (INITEX)
+ restricted \write18 enabled.
+ (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/cp227.tcx)
+entering extended mode
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/latexco
+nfig/pdflatex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex)
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/la
+tex.ltx
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/te
+xsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, compatibility for TeX 2,  parameters,
+LaTeX2e <2016/03/31>
+hacks, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+nttext.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+nttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+lenc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/t1
+enc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1enc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+senc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/t1
+cmr.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmr.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmss.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+ntmath.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+ntmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+lcmm.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+scmsy.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+xcmex.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/uc
+mr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/pr
+eload.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/pr
+eload.ltx)) page nos., x-ref, environments, center, verbatim,
+math definitions, boxes, title, sectioning, contents, floats, footnotes,
+index, bibliography, output,
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/hyphen.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/switch.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/dumyhyph.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/zerohyph.tex))
+ ) )
+Beginning to dump on file pdflatex.fmt
+ (preloaded format=pdflatex 2016.11.8)
+5054 strings of total length 70848
+44351 memory locations dumped; current usage is 144&43759
+3399 multiletter control sequences
+\font\nullfont=nullfont
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+3633 words of font info for 14 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 6081 has 183 ops out of 35111
+  2 for language 1
+  181 for language 0
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+Transcript written on pdflatex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/pdftex/pdflatex.fmt installed.
+fmtutil [INFO]: --- remaking etex with pdftex
+fmtutil: running `pdftex -ini   -jobname=etex -progname=etex -translate-file=cp227.tcx *etex.ini' ...
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (INITEX)
+ restricted \write18 enabled.
+ (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/cp227.tcx)
+entering extended mode
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/config/
+etex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+ex.src
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/base/pl
+ain.tex Preloading the plain format: codes, registers, parameters, fonts,
+more fonts, macros, math definitions, output routines, hyphenation
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex [skipping from \patterns to end-of-file...]))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+exdefs.lib Skipping module "grouptypes"; Loading module "interactionmodes";
+Skipping module "nodetypes"; Skipping module "iftypes";)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config
+/language.def
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)) Augmenting the Plain TeX definitions: \tracingall;
+Adding new e-TeX definitions: \eTeX, \loggingall, \tracingnone,
+register allocation; extended register allocation; 
+Recycling: \addlanguage, \@nswer (not defined), \@sk, \b@dresponsetrue,
+\b@dresponsefalse, \ch@ckforyn, \mayber@cycle, \et@xabort, \et@xbuf,
+\et@xfmtsrc, \et@xfilehdr, \et@xinf, \et@xpatterns, \l@ngdefnfile, \n@xt,
+\p@rse (not defined), \pr@mpt (not defined), \pr@mptloop (not defined),
+\forcer@cycle, \usef@llback, \usef@llbacktrue, \usef@llbackfalse, 
+Retaining: \et@xerr, \et@xinput, \et@xlibhdr, \et@xmsg, \et@xtoks, \et@xwarn,
+\et@xl@@d, \et@xl@ad, \et@xload, \et@xlang, \et@xhash, \eTeX, \etexhdrchk,
+\etexstatus, \module, \uselanguage, \r@tain, \r@cycle,) )
+Beginning to dump on file etex.fmt
+ (preloaded format=etex 2016.11.8)
+2885 strings of total length 43391
+7960 memory locations dumped; current usage is 203&7290
+1261 multiletter control sequences
+\font\nullfont=nullfont
+\font\tenrm=cmr10
+\font\preloaded=cmr9
+\font\preloaded=cmr8
+\font\sevenrm=cmr7
+\font\preloaded=cmr6
+\font\fiverm=cmr5
+\font\teni=cmmi10
+\font\preloaded=cmmi9
+\font\preloaded=cmmi8
+\font\seveni=cmmi7
+\font\preloaded=cmmi6
+\font\fivei=cmmi5
+\font\tensy=cmsy10
+\font\preloaded=cmsy9
+\font\preloaded=cmsy8
+\font\sevensy=cmsy7
+\font\preloaded=cmsy6
+\font\fivesy=cmsy5
+\font\tenex=cmex10
+\font\preloaded=cmss10
+\font\preloaded=cmssq8
+\font\preloaded=cmssi10
+\font\preloaded=cmssqi8
+\font\tenbf=cmbx10
+\font\preloaded=cmbx9
+\font\preloaded=cmbx8
+\font\sevenbf=cmbx7
+\font\preloaded=cmbx6
+\font\fivebf=cmbx5
+\font\tentt=cmtt10
+\font\preloaded=cmtt9
+\font\preloaded=cmtt8
+\font\preloaded=cmsltt10
+\font\tensl=cmsl10
+\font\preloaded=cmsl9
+\font\preloaded=cmsl8
+\font\tenit=cmti10
+\font\preloaded=cmti9
+\font\preloaded=cmti8
+\font\preloaded=cmti7
+\font\preloaded=cmu10
+\font\preloaded=cmmib10
+\font\preloaded=cmbsy10
+\font\preloaded=cmcsc10
+\font\preloaded=cmssbx10
+\font\preloaded=cmdunh10
+\font\preloaded=cmr7 at 14.51799pt
+\font\preloaded=cmtt10 at 14.4pt
+\font\preloaded=cmssbx10 at 14.4pt
+\font\preloaded=manfnt
+14787 words of font info for 50 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 6075 has 181 ops out of 35111
+  181 for language 0
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+Transcript written on etex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/pdftex/etex.fmt installed.
+fmtutil [INFO]: --- remaking dviluatex with luatex
+fmtutil: running `luatex -ini   -jobname=dviluatex -progname=dviluatex dviluatex.ini' ...
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (INITEX)
+ restricted system commands enabled.
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/dviluatex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/luatex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/luatexconfig.tex
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/confi
+g/luatexiniconfig.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/unico
+de-data/load-unicode-data.tex 
+load-unicode-data.tex v1.4a (2016-02-21)
+Reading Unicode data
+# UnicodeData-8.0.0.txt
+# Downloaded 2015-12-01 09:00:00 GMT [JAW]
+)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/luatex/hyph-u
+tf8/etex.src
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/base/pl
+ain.tex Preloading the plain format: codes, registers, parameters, fonts,
+more fonts, macros, math definitions, output routines, hyphenation
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex [skipping from \patterns to end-of-file...]))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+exdefs.lib Skipping module "grouptypes"; Loading module "interactionmodes";
+Skipping module "nodetypes"; Skipping module "iftypes";)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config
+/language.def
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)) Augmenting the Plain TeX definitions: \tracingall;
+Adding new e-TeX definitions: \eTeX, \loggingall, \tracingnone,
+register allocation; extended register allocation; 
+Recycling: \addlanguage, \@nswer (not defined), \@sk, \b@dresponsetrue,
+\b@dresponsefalse, \ch@ckforyn, \mayber@cycle, \et@xabort, \et@xbuf,
+\et@xfmtsrc, \et@xfilehdr, \et@xinf, \et@xpatterns, \l@ngdefnfile, \n@xt,
+\p@rse (not defined), \pr@mpt (not defined), \pr@mptloop (not defined),
+\forcer@cycle, \usef@llback, \usef@llbacktrue, \usef@llbackfalse, 
+Retaining: \et@xerr, \et@xinput, \et@xlibhdr, \et@xmsg, \et@xtoks, \et@xwarn,
+\et@xl@@d, \et@xl@ad, \et@xload, \et@xlang, \et@xhash, \eTeX, \etexhdrchk,
+\etexstatus, \module, \uselanguage, \r@tain, \r@cycle,)))
+Beginning to dump on file dviluatex.fmt
+ (format=dviluatex 2016.11.8)
+3132 strings using 10177 bytes
+68833 memory locations dumped; current usage is 155&7713
+1758 multiletter control sequences
+\font\nullfont=nullfont
+\font\tenrm=cmr10
+\font\preloaded=cmr9
+\font\preloaded=cmr8
+\font\sevenrm=cmr7
+\font\preloaded=cmr6
+\font\fiverm=cmr5
+\font\teni=cmmi10
+\font\preloaded=cmmi9
+\font\preloaded=cmmi8
+\font\seveni=cmmi7
+\font\preloaded=cmmi6
+\font\fivei=cmmi5
+\font\tensy=cmsy10
+\font\preloaded=cmsy9
+\font\preloaded=cmsy8
+\font\sevensy=cmsy7
+\font\preloaded=cmsy6
+\font\fivesy=cmsy5
+\font\tenex=cmex10
+\font\preloaded=cmss10
+\font\preloaded=cmssq8
+\font\preloaded=cmssi10
+\font\preloaded=cmssqi8
+\font\tenbf=cmbx10
+\font\preloaded=cmbx9
+\font\preloaded=cmbx8
+\font\sevenbf=cmbx7
+\font\preloaded=cmbx6
+\font\fivebf=cmbx5
+\font\tentt=cmtt10
+\font\preloaded=cmtt9
+\font\preloaded=cmtt8
+\font\preloaded=cmsltt10
+\font\tensl=cmsl10
+\font\preloaded=cmsl9
+\font\preloaded=cmsl8
+\font\tenit=cmti10
+\font\preloaded=cmti9
+\font\preloaded=cmti8
+\font\preloaded=cmti7
+\font\preloaded=cmu10
+\font\preloaded=cmmib10
+\font\preloaded=cmbsy10
+\font\preloaded=cmcsc10
+\font\preloaded=cmssbx10
+\font\preloaded=cmdunh10
+\font\preloaded=cmr7 at 14.51799pt
+\font\preloaded=cmtt10 at 14.4pt
+\font\preloaded=cmssbx10 at 14.4pt
+\font\preloaded=manfnt
+50 preloaded fonts
+No pages of output.
+Transcript written on dviluatex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/luatex/dviluatex.fmt installed.
+fmtutil [INFO]: --- remaking mf with mf-nowin
+fmtutil: running `mf-nowin -ini   -jobname=mf -progname=mf -translate-file=cp227.tcx mf.ini' ...
+This is METAFONT, Version 2.7182818 (TeX Live 2016) (INIMF)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/cp227.tcx)
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/metafont/config/m
+f.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/metafont/base/pla
+in.mf
+Preloading the plain base, version 2.71: preliminaries,
+ basic constants and mathematical macros,
+ macros for converting from device-independent units to pixels,
+ macros and tables for various modes of operation,
+ macros for drawing and filling,
+ macros for proof labels and rules,
+ macros for character and font administration,
+and a few last-minute items.)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/metafont/misc/mod
+es.mf) )
+Beginning to dump on file mf.base
+ (preloaded base=mf 2016.11.8)
+2226 strings of total length 30211
+11855 memory locations dumped; current usage is 3651&7844
+1004 symbolic tokens
+Transcript written on mf.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/metafont/mf.base installed.
+fmtutil [INFO]: --- remaking dvilualatex with luatex
+fmtutil: running `luatex -ini   -jobname=dvilualatex -progname=dvilualatex dvilualatex.ini' ...
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (INITEX)
+ restricted system commands enabled.
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/dvilualatex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/lualatex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/luatexconfig.tex
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/la
+tex.ltx
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/te
+xsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, compatibility for TeX 2,  parameters,
+LaTeX2e <2016/03/31>
+hacks, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+nttext.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+nttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+lenc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/t1
+enc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1enc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+senc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/t1
+cmr.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmr.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmss.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+ntmath.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+ntmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+lcmm.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+scmsy.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+xcmex.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/uc
+mr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/pr
+eload.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/pr
+eload.ltx)) page nos., x-ref, environments, center, verbatim,
+math definitions, boxes, title, sectioning, contents, floats, footnotes,
+index, bibliography, output,  Unicode character data,
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/unico
+de-data/load-unicode-data.tex 
+load-unicode-data.tex v1.4a (2016-02-21)
+Reading Unicode data
+# UnicodeData-8.0.0.txt
+# Downloaded 2015-12-01 09:00:00 GMT [JAW]
+)
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/hyphen.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/luababel.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/switch.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex))
+)))
+Beginning to dump on file dvilualatex.fmt
+ (format=dvilualatex 2016.11.8)
+4886 strings using 33647 bytes
+153625 memory locations dumped; current usage is 174&48949
+3672 multiletter control sequences
+\font\nullfont=nullfont
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+14 preloaded fonts
+No pages of output.
+Transcript written on dvilualatex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/luatex/dvilualatex.fmt installed.
+fmtutil [INFO]: --- remaking latex with pdftex
+fmtutil: running `pdftex -ini   -jobname=latex -progname=latex -translate-file=cp227.tcx *latex.ini' ...
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (INITEX)
+ restricted \write18 enabled.
+ (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/cp227.tcx)
+entering extended mode
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/latexco
+nfig/latex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex)
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/la
+tex.ltx
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/te
+xsys.cfg)
+./texsys.aux found
+
+
+\@currdir set to: ./.
+
+
+Assuming \openin and \input 
+have the same search path.
+
+
+Defining UNIX/DOS style filename parser.
+
+catcodes, registers, compatibility for TeX 2,  parameters,
+LaTeX2e <2016/03/31>
+hacks, control, par, spacing, files, font encodings, lengths,
+====================================
+
+Local config file fonttext.cfg used
+
+====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+nttext.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+nttext.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+lenc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/t1
+enc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1enc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+senc.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/t1
+cmr.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmr.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmss.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/ot
+1cmtt.fd)))
+====================================
+
+Local config file fontmath.cfg used
+
+====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+ntmath.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/fo
+ntmath.ltx
+=== Don't modify this file, use a .cfg file instead ===
+
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+lcmm.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+scmsy.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/om
+xcmex.fd)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/uc
+mr.fd)))
+====================================
+
+Local config file preload.cfg used
+
+=====================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/pr
+eload.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/latex/base/pr
+eload.ltx)) page nos., x-ref, environments, center, verbatim,
+math definitions, boxes, title, sectioning, contents, floats, footnotes,
+index, bibliography, output,
+===========================================
+Local configuration file hyphen.cfg used
+===========================================
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/hyphen.cfg
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/babel
+/switch.def)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/dumyhyph.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/zerohyph.tex))
+ ) )
+Beginning to dump on file latex.fmt
+ (preloaded format=latex 2016.11.8)
+5053 strings of total length 70822
+44348 memory locations dumped; current usage is 144&43756
+3399 multiletter control sequences
+\font\nullfont=nullfont
+\font\OMX/cmex/m/n/10=cmex10
+\font\tenln=line10
+\font\tenlnw=linew10
+\font\tencirc=lcircle10
+\font\tencircw=lcirclew10
+\font\OT1/cmr/m/n/5=cmr5
+\font\OT1/cmr/m/n/7=cmr7
+\font\OT1/cmr/m/n/10=cmr10
+\font\OML/cmm/m/it/5=cmmi5
+\font\OML/cmm/m/it/7=cmmi7
+\font\OML/cmm/m/it/10=cmmi10
+\font\OMS/cmsy/m/n/5=cmsy5
+\font\OMS/cmsy/m/n/7=cmsy7
+\font\OMS/cmsy/m/n/10=cmsy10
+3633 words of font info for 14 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 6081 has 183 ops out of 35111
+  2 for language 1
+  181 for language 0
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+Transcript written on latex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/pdftex/latex.fmt installed.
+fmtutil [INFO]: --- remaking pdfetex with pdftex
+fmtutil: running `pdftex -ini   -jobname=pdfetex -progname=pdfetex -translate-file=cp227.tcx *pdfetex.ini' ...
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (INITEX)
+ restricted \write18 enabled.
+ (/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/web2c/cp227.tcx)
+entering extended mode
+
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/config/
+pdfetex.ini
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/tex-i
+ni-files/pdftexconfig.tex)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+ex.src
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/base/pl
+ain.tex Preloading the plain format: codes, registers, parameters, fonts,
+more fonts, macros, math definitions, output routines, hyphenation
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex [skipping from \patterns to end-of-file...]))
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/etex/et
+exdefs.lib Skipping module "grouptypes"; Loading module "interactionmodes";
+Skipping module "nodetypes"; Skipping module "iftypes";)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/tex/generic/config
+/language.def
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/generic/hyphe
+n/hyphen.tex)) Augmenting the Plain TeX definitions: \tracingall;
+Adding new e-TeX definitions: \eTeX, \loggingall, \tracingnone,
+register allocation; extended register allocation; 
+Recycling: \addlanguage, \@nswer (not defined), \@sk, \b@dresponsetrue,
+\b@dresponsefalse, \ch@ckforyn, \mayber@cycle, \et@xabort, \et@xbuf,
+\et@xfmtsrc, \et@xfilehdr, \et@xinf, \et@xpatterns, \l@ngdefnfile, \n@xt,
+\p@rse (not defined), \pr@mpt (not defined), \pr@mptloop (not defined),
+\forcer@cycle, \usef@llback, \usef@llbacktrue, \usef@llbackfalse, 
+Retaining: \et@xerr, \et@xinput, \et@xlibhdr, \et@xmsg, \et@xtoks, \et@xwarn,
+\et@xl@@d, \et@xl@ad, \et@xload, \et@xlang, \et@xhash, \eTeX, \etexhdrchk,
+\etexstatus, \module, \uselanguage, \r@tain, \r@cycle,)
+(/home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-dist/tex/plain/config/
+pdftexmagfix.tex) )
+Beginning to dump on file pdfetex.fmt
+ (preloaded format=pdfetex 2016.11.8)
+2895 strings of total length 43947
+7960 memory locations dumped; current usage is 203&7321
+1263 multiletter control sequences
+\font\nullfont=nullfont
+\font\tenrm=cmr10
+\font\preloaded=cmr9
+\font\preloaded=cmr8
+\font\sevenrm=cmr7
+\font\preloaded=cmr6
+\font\fiverm=cmr5
+\font\teni=cmmi10
+\font\preloaded=cmmi9
+\font\preloaded=cmmi8
+\font\seveni=cmmi7
+\font\preloaded=cmmi6
+\font\fivei=cmmi5
+\font\tensy=cmsy10
+\font\preloaded=cmsy9
+\font\preloaded=cmsy8
+\font\sevensy=cmsy7
+\font\preloaded=cmsy6
+\font\fivesy=cmsy5
+\font\tenex=cmex10
+\font\preloaded=cmss10
+\font\preloaded=cmssq8
+\font\preloaded=cmssi10
+\font\preloaded=cmssqi8
+\font\tenbf=cmbx10
+\font\preloaded=cmbx9
+\font\preloaded=cmbx8
+\font\sevenbf=cmbx7
+\font\preloaded=cmbx6
+\font\fivebf=cmbx5
+\font\tentt=cmtt10
+\font\preloaded=cmtt9
+\font\preloaded=cmtt8
+\font\preloaded=cmsltt10
+\font\tensl=cmsl10
+\font\preloaded=cmsl9
+\font\preloaded=cmsl8
+\font\tenit=cmti10
+\font\preloaded=cmti9
+\font\preloaded=cmti8
+\font\preloaded=cmti7
+\font\preloaded=cmu10
+\font\preloaded=cmmib10
+\font\preloaded=cmbsy10
+\font\preloaded=cmcsc10
+\font\preloaded=cmssbx10
+\font\preloaded=cmdunh10
+\font\preloaded=cmr7 at 14.51799pt
+\font\preloaded=cmtt10 at 14.4pt
+\font\preloaded=cmssbx10 at 14.4pt
+\font\preloaded=manfnt
+14787 words of font info for 50 preloaded fonts
+14 hyphenation exceptions
+Hyphenation trie of length 6075 has 181 ops out of 35111
+  181 for language 0
+0 words of pdfTeX memory
+0 indirect objects
+No pages of output.
+Transcript written on pdfetex.log.
+fmtutil [INFO]: /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/texmf-var/web2c/pdftex/pdfetex.fmt installed.
+fmtutil [INFO]: Disabled formats: 1
+fmtutil [INFO]: Successfully rebuilt formats: 13
+fmtutil [INFO]: Total formats: 14
+fmtutil [INFO]: exiting with status 0
+running package-specific postactions
+postaction install script for dvipdfmx: perl /home/thiago/Dropbox/Programacao/TikZ-TAK/texlive/tlpkg/tlpostcode/dvipdfmx.pl
+finished with package-specific postactions

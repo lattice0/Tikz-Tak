@@ -5,3 +5,4 @@ WindowAddCal::WindowAddCal(QWidget *parent)
 {
     ui.setupUi(this);
 }
+

@@ -1,0 +1,36 @@
+%% Dados Globais
+%%
+\ano{2017}
+%%\PeriodoLetivo{dia}{mes}{dia}{mes}
+\PeriodoLetivo{2}{3}{8}{7}
+%%\PrimeiraSexta{dia}
+\PrimeiraSexta{3}
+%%\NotasDisciplina{dia}{mes}
+\NotasDisciplina{13}{7}
+%%\PeriodoRER{dia}{mes}{dia}{mes}
+%\PeriodoRER{7}{12}{13}{12}
+%%\NotasRER{dia}{mes}
+\NotasRER{12}{7}
+%%\MaisFeriados{mes-dia,mes-dia,...,mes-dia}
+\MaisFeriados{04-14,04-15,04-22,06-15,06-16,06-17,09-08,09-09,10-13,10-14,11-03,11-04}
+
+%% Dados Locais
+%%
+\Disciplina{Esp.\ M\'et.}
+\Curso{Matemática}
+%
+%%\DiasDeAula{\segunda,\terca,\quarta,\quinta,\sexta,\sabado,\domingo}
+\DiasDeAula{\segunda,\terca}
+%%\dia{seg/ter/qua/qui/sex/sab/dom}
+\dia{seg/qua}
+%%\hora{hh--hh}
+\hora{14--16/08--10}
+%%\ano{aaaa}% caso precise mudar
+%\ano{}
+\NumeroDeAulas{35}
+\Creditos{2}
+%%\DiasDeProva{mes-dia,mes-dia,...,mes-dia}
+%\DiasDeProva{03-09,07-11}
+\GerarCalendario
+
+%%\Zerar% para zerar todas as variáveis

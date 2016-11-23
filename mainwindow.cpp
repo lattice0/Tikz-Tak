@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     //connect(compileButton, SIGNAL (released()), this, SLOT (compileFile()));
     //connect(algumaCoisaButton, SIGNAL (released()), this, SLOT (algumaCoisa()));
     connect(insertCalendarButton, SIGNAL (released()), this, SLOT (insertCalendar()));
+    connect( actionSobre_Qt, SIGNAL(triggered()), qApp, SLOT(aboutQt()) );
 }
 
 void MainWindow::compileFile()

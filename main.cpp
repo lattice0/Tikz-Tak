@@ -1,3 +1,10 @@
+/*
+ * Tikz-TakzVersão 0.1
+ * Thiago de Melo
+ * Lucas Zanella
+*/
+
+
 #include "mainwindow.h"
 
 #include <QApplication>
