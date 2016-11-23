@@ -42,3 +42,7 @@ void MainWindow::insertCalendar()
    WindowAddCal* myWindow = new WindowAddCal();
    myWindow->show();
 }
+
+void MainWindow::on_sair_released(){
+    close();
+}

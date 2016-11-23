@@ -13,6 +13,7 @@ public slots:
     void compileFile();
     void algumaCoisa();
     void insertCalendar();
+    void on_sair_released();
 private:
     Ui::MainWindow *ui;
     WindowAddCal *addCalendar;
