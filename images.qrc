@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/application-default-icon.svg</file>
+        <file>icons/application-pdf.svg</file>
+        <file>icons/evolution-calendar.svg</file>
+        <file>icons/find.svg</file>
+        <file>icons/hardinfo.svg</file>
+        <file>icons/load.svg</file>
+        <file>icons/media-floppy.svg</file>
+        <file>icons/cal-save.svg</file>
+        <file>icons/tikz-tak.png</file>
+        <file>icons/tikz-tak.svg</file>
+        <file>icons/tikz-tak-cal.svg</file>
+        <file>icons/applications-system.svg</file>
+        <file>icons/application-exit.png</file>
+        <file>icons/document-new.png</file>
+        <file>icons/document-open.png</file>
+        <file>icons/document-save.png</file>
+        <file>icons/help-about.png</file>
+        <file>icons/help-contents.png</file>
+    </qresource>
+</RCC>

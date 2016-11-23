@@ -19,3 +19,5 @@ DISTFILES +=
 FORMS += \
     mainwindow.ui \
     windowaddcal.ui
+
+RESOURCES = images.qrc
