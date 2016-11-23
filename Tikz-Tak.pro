@@ -21,3 +21,5 @@ FORMS += \
     windowaddcal.ui
 
 RESOURCES = images.qrc
+
+LIBS += -L/usr/lib/nvidia-361
