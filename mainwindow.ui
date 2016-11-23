@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>587</width>
-    <height>489</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,242 +19,618 @@
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
-  <property name="windowTitle">
-   <string>TikZ-TaK (calendar) v0.1</string>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>icons/tikz-tak-cal.svg</normaloff>icons/tikz-tak-cal.svg</iconset>
+    <normaloff>:/icons/tikz-tak-cal.svg</normaloff>:/icons/tikz-tak-cal.svg</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <property name="spacing">
-       <number>4</number>
-      </property>
-      <property name="sizeConstraint">
-       <enum>QLayout::SetFixedSize</enum>
-      </property>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0,0">
-        <property name="spacing">
-         <number>6</number>
-        </property>
-        <property name="sizeConstraint">
-         <enum>QLayout::SetFixedSize</enum>
-        </property>
-        <item>
-         <widget class="QPushButton" name="newProjectButton">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>Novo Projeto</string>
-          </property>
-          <property name="icon">
-           <iconset theme="document-new"/>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="saveProjectButton">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>Salvar Projeto</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="openProjectButton">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>Abrir Projeto</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="insertCalendarButton">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>Inserir Calendário</string>
-          </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>icons/evolution-calendar.svg</normaloff>icons/evolution-calendar.svg</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>42</width>
-            <height>42</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="createCalendarButton">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>Criar Calendário</string>
-          </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>icons/application-pdf.svg</normaloff>icons/application-pdf.svg</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>42</width>
-            <height>42</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="setupButton">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>Configurar</string>
-          </property>
-          <property name="icon">
-           <iconset theme="applications-system"/>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>42</width>
-            <height>42</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="aboutButton">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>Sobre</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>400</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-     </layout>
-    </item>
-   </layout>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>9</y>
+      <width>172</width>
+      <height>426</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="leftPanel">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetFixedSize</enum>
+     </property>
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QFrame" name="logo">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>168</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>168</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icons/tikz-tak.png);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="newCal">
+       <property name="styleSheet">
+        <string notr="true">text-align:left</string>
+       </property>
+       <property name="text">
+        <string>Novo Projeto</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/icons/document-new.png</normaloff>:/icons/document-new.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveCal">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">text-align:left</string>
+       </property>
+       <property name="text">
+        <string>Salvar Projeto</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/icons/document-save.png</normaloff>:/icons/document-save.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="openCal">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">text-align:left</string>
+       </property>
+       <property name="text">
+        <string>Abrir Projeto</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/icons/document-open.png</normaloff>:/icons/document-open.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="insertCalendarButton">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">text-align:left</string>
+       </property>
+       <property name="text">
+        <string>Inserir Calendário</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/icons/evolution-calendar.svg</normaloff>:/icons/evolution-calendar.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="makeCal">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;Clique para gerar um arquivo PDF com o(s) calend&amp;aacute;rio(s) definidos.&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">text-align:left</string>
+       </property>
+       <property name="text">
+        <string>Gerar Calendário</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/icons/application-pdf.svg</normaloff>:/icons/application-pdf.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="config">
+       <property name="styleSheet">
+        <string notr="true">text-align:left</string>
+       </property>
+       <property name="text">
+        <string>Configurar</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/icons/application-default-icon.svg</normaloff>:/icons/application-default-icon.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="about">
+       <property name="styleSheet">
+        <string notr="true">text-align:left</string>
+       </property>
+       <property name="text">
+        <string>Sobre o TikZ-TaK</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/icons/help-about.png</normaloff>:/icons/help-about.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>config</zorder>
+    <zorder>logo</zorder>
+    <zorder>insertCalendarButton</zorder>
+    <zorder>makeCal</zorder>
+    <zorder>newCal</zorder>
+    <zorder>openCal</zorder>
+    <zorder>saveCal</zorder>
+    <zorder>line</zorder>
+    <zorder>about</zorder>
+    <zorder>line_2</zorder>
+   </widget>
+   <widget class="QPushButton" name="sair">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>505</y>
+      <width>80</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>80</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Sair</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/icons/application-exit.png</normaloff>:/icons/application-exit.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>42</width>
+      <height>42</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="helpbox">
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>43</y>
+      <width>400</width>
+      <height>466</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="welcome">
+    <property name="geometry">
+     <rect>
+      <x>195</x>
+      <y>10</y>
+      <width>400</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>587</width>
+     <width>800</width>
      <height>19</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuTikz_TaK">
-    <property name="title">
-     <string>Arquivo</string>
-    </property>
-    <addaction name="actionAbrir_Projeto"/>
-    <addaction name="actionSalvar_Projeto"/>
-    <addaction name="actionCompilar"/>
-   </widget>
    <widget class="QMenu" name="menuSobre">
     <property name="title">
-     <string>Sobre</string>
+     <string>Aj&amp;uda</string>
     </property>
-    <addaction name="actionLicen_a"/>
-    <addaction name="actionAutor"/>
-    <addaction name="actionVers_o_0_1"/>
+    <addaction name="action_config"/>
+    <addaction name="separator"/>
+    <addaction name="actionManual_do_Usuario"/>
+    <addaction name="action_Licen_a"/>
+    <addaction name="action_Vers_o_0_1"/>
+    <addaction name="action_about"/>
+    <addaction name="actionSobre_Qt"/>
+    <addaction name="actionDock"/>
+   </widget>
+   <widget class="QMenu" name="menu_Calend_rio">
+    <property name="title">
+     <string>&amp;Calendário</string>
+    </property>
+    <addaction name="action_addCal"/>
+    <addaction name="action_makeCal"/>
+   </widget>
+   <widget class="QMenu" name="menuTikz_TaK">
+    <property name="title">
+     <string>&amp;Arquivo</string>
+    </property>
+    <addaction name="action_newCal"/>
+    <addaction name="action_openCal"/>
+    <addaction name="action_saveCal"/>
+    <addaction name="separator"/>
+    <addaction name="action_close"/>
    </widget>
    <addaction name="menuTikz_TaK"/>
+   <addaction name="menu_Calend_rio"/>
    <addaction name="menuSobre"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionAbrir_Projeto">
+  <widget class="QStatusBar" name="statusbar">
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="action_openCal">
+   <property name="icon">
+    <iconset theme="document-open">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
-    <string>Abrir Projeto...</string>
+    <string>&amp;Abrir Projeto...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
    </property>
   </action>
-  <action name="actionSalvar_Projeto">
+  <action name="action_saveCal">
+   <property name="icon">
+    <iconset theme="document-save">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
-    <string>Salvar Projeto...</string>
+    <string>&amp;Salvar Projeto...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
-  <action name="actionCompilar">
+  <action name="action_makeCal">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/application-pdf.svg</normaloff>:/icons/application-pdf.svg</iconset>
+   </property>
    <property name="text">
-    <string>Compilar</string>
+    <string>&amp;Gerar Calendário</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
    </property>
   </action>
-  <action name="actionLicen_a">
+  <action name="action_Licen_a">
    <property name="text">
     <string>Licença</string>
    </property>
   </action>
-  <action name="actionAutor">
+  <action name="action_about">
+   <property name="icon">
+    <iconset theme="help-about">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
    <property name="text">
-    <string>Autor</string>
+    <string>&amp;Sobre o TikZ-TaK</string>
    </property>
   </action>
-  <action name="actionVers_o_0_1">
+  <action name="action_Vers_o_0_1">
    <property name="text">
     <string>Versão 0.1</string>
    </property>
   </action>
+  <action name="action_newCal">
+   <property name="icon">
+    <iconset theme="document-new">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Novo Projeto</string>
+   </property>
+   <property name="whatsThis">
+    <string>Cria um novo projeto que poderá ter vários calendários.</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_addCal">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/evolution-calendar.svg</normaloff>:/icons/evolution-calendar.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Inserir Calendário</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_config">
+   <property name="icon">
+    <iconset theme="applications-system">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Configurar</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="icon">
+    <iconset theme="exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Fechar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionManual_do_Usuario">
+   <property name="text">
+    <string>Manual do Usuário</string>
+   </property>
+  </action>
+  <action name="actionSobre_Qt">
+   <property name="text">
+    <string>Sobre o &amp;Qt</string>
+   </property>
+  </action>
+  <action name="actionDock">
+   <property name="text">
+    <string>dock</string>
+   </property>
+  </action>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>action_about</sender>
+   <signal>triggered()</signal>
+   <receiver>about</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>95</x>
+     <y>428</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_close</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>about</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>helpbox</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>428</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>294</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
