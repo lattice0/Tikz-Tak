@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     QString *temp1 = new QString("Carregado em ");
     QString *temp2 = new QString(QDate::currentDate().toString(Qt::SystemLocaleDate));
     QLabel *statusDateTime = new QLabel();
-    statusDateTime-> setText(temp1->append(temp2));
+    statusDateTime-> setText(temp1->append(temp2)); // not used yet
     QLabel *statusBuilt = new QLabel();
     statusBuilt->setText(compilationDateTime);
     QLabel *statusBlank = new QLabel();

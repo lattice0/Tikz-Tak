@@ -25,6 +25,8 @@ class MainWindow : public QMainWindow, private Ui::MainWindow
 
 public:
     MainWindow(QWidget *parent = 0);
+protected:
+        void closeEvent(QCloseEvent *event);
 public slots:
     void compileFile();
     void algumaCoisa();

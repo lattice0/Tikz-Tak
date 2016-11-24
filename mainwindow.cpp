@@ -7,8 +7,9 @@
 #include<QCoreApplication>
 #include<QMessageBox>
 #include<QDir>
-#include <QDebug>
-#include <string>
+#include<QDebug>
+#include<QCloseEvent>
+#include<string>
 
 MainWindow::MainWindow(QWidget *parent)
 {
@@ -54,6 +55,21 @@ void MainWindow::insertCalendar()
 {
    WindowAddCal* myWindow = new WindowAddCal();
    myWindow->show();
+}
+
+// redefinicao do close() para confirmacao
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    QMessageBox::StandardButton dialogExit;
+    dialogExit = QMessageBox::warning(this,
+               "Confirmação de Saída",
+               "Deseja realmente fechar o TikZ-TaK? Projetos não salvos serão perdidos.",
+             QMessageBox::Ok | QMessageBox::Cancel);
+    if( dialogExit == QMessageBox::Ok) {
+        close();
+    } else {
+        event->ignore();
+    }
 }
 
 void MainWindow::on_sair_released(){
