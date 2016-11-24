@@ -64,7 +64,7 @@ void MainWindow::closeEvent(QCloseEvent *event)
 {
     QMessageBox::StandardButton dialogExit;
     dialogExit = QMessageBox::warning(this,
-               "Confirmação de Saída",
+               tr("Confirmação de Saída"),
                "Deseja realmente fechar o TikZ-TaK? Projetos não salvos serão perdidos.",
              QMessageBox::Ok | QMessageBox::Cancel);
     if( dialogExit == QMessageBox::Ok) {

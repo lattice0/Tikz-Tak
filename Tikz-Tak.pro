@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = Tikz-Tak
+TARGET = TikZ-TaK
 
 QT = core gui
 
@@ -27,5 +27,7 @@ FORMS += \
     about.ui
 
 RESOURCES = images.qrc
+
+TRANSLATIONS = tikz-tak_en.ts
 
 LIBS += -L/usr/lib/nvidia-361

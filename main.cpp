@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 
 #include <QApplication>
+#include<QTranslator>
+
 #include <fstream>
 
 int main(int argc, char *argv[])
@@ -16,6 +18,12 @@ int main(int argc, char *argv[])
     outfile.close();
 
     QApplication app(argc, argv);
+    QTranslator translator;
+    translator.load("tikz-tak_en");
+//    app.installTranslator(&translator);
+    if (translator.load(QLocale(), QLatin1String("tikz-tak"), QLatin1String("_"), QLatin1String(":/translations")))
+            app.installTranslator(&translator);
+
     MainWindow *mainWindow = new MainWindow;
 
     // status bar
