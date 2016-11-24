@@ -1,10 +1,15 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#define VERSAO "0.1"
-#define THIAGO "Thiago de Melo"
-#define LUCAS "Lucas Zanella"
 #define TIKZTAK "TikZ-TaK"
+#define VERSAO "0.1"
+
+#define THIAGO "Thiago de Melo"
+#define THIAGOWEB "www.rc.unesp.br/tmelo"
+
+#define LUCAS "Lucas Zanella"
+#define LUCASWEB "<insert>"
+
 
 #include "windowaddcal.h"
 #include "ui_mainwindow.h"

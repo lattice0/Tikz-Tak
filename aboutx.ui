@@ -11,6 +11,9 @@
     <height>295</height>
    </rect>
   </property>
+  <property name="focusPolicy">
+   <enum>Qt::TabFocus</enum>
+  </property>
   <property name="windowTitle">
    <string>About</string>
   </property>
@@ -21,7 +24,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>5</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
@@ -44,19 +47,6 @@
            </property>
           </widget>
          </item>
-         <item>
-          <spacer name="verticalSpacer_3">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
         </layout>
        </item>
        <item>
@@ -78,15 +68,15 @@
       </attribute>
       <layout class="QVBoxLayout" name="authorTabLayout">
        <item>
-        <widget class="QGroupBox" name="groupBox_2">
+        <widget class="QGroupBox" name="groupBox_thiago">
          <property name="title">
-          <string>Current maintainer</string>
+          <string>AUTHOR</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
           <item row="1" column="1">
            <widget class="QLabel" name="label_18">
             <property name="text">
-             <string>Greece</string>
+             <string>Brazil</string>
             </property>
            </widget>
           </item>
@@ -117,17 +107,10 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_14">
-            <property name="text">
-             <string>Name:</string>
-            </property>
-           </widget>
-          </item>
           <item row="0" column="1">
            <widget class="QLabel" name="label_17">
             <property name="text">
-             <string notr="true">kkk</string>
+             <string notr="true"/>
             </property>
            </widget>
           </item>
@@ -144,26 +127,33 @@
             </property>
            </spacer>
           </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>Webpage:</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
        <item>
-        <widget class="QGroupBox" name="groupBox">
+        <widget class="QGroupBox" name="groupBox_lucas">
          <property name="title">
-          <string>Original author</string>
+          <string>AUTHOR</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_5">
           <item row="1" column="1">
            <widget class="QLabel" name="label_7">
             <property name="text">
-             <string>France</string>
+             <string>Brazil</string>
             </property>
            </widget>
           </item>
           <item row="0" column="1">
            <widget class="QLabel" name="label_2">
             <property name="text">
-             <string notr="true">kk</string>
+             <string notr="true"/>
             </property>
            </widget>
           </item>
@@ -183,7 +173,7 @@
           <item row="0" column="0">
            <widget class="QLabel" name="label_3">
             <property name="text">
-             <string>Name:</string>
+             <string>Webpage:</string>
             </property>
            </widget>
           </item>
@@ -234,7 +224,7 @@
      </widget>
      <widget class="QWidget" name="thanksTab">
       <attribute name="title">
-       <string>Special Thanks</string>
+       <string>Thanks</string>
       </attribute>
       <layout class="QVBoxLayout" name="thanksTabLayout">
        <property name="leftMargin">
@@ -367,7 +357,7 @@
          <item row="1" column="1">
           <widget class="QLabel" name="label_9">
            <property name="text">
-            <string notr="true">Libtorrent:</string>
+            <string notr="true">:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
