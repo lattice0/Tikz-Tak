@@ -25,6 +25,8 @@ MainWindow::MainWindow(QWidget *parent)
     //connect(algumaCoisaButton, SIGNAL (released()), this, SLOT (algumaCoisa()));
     connect(insertCalendarButton, SIGNAL (released()), this, SLOT (insertCalendar()));
     connect(about, SIGNAL (released()), this, SLOT (fc_about()));
+    connect(action_about_Qt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
+    connect(action_addCal, SIGNAL(triggered()),this, SLOT(insertCalendar()));
 
 
 

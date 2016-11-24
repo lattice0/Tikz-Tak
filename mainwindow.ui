@@ -423,7 +423,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>19</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSobre">
@@ -434,7 +434,7 @@ p, li { white-space: pre-wrap; }
     <addaction name="separator"/>
     <addaction name="actionManual_do_Usuario"/>
     <addaction name="action_about"/>
-    <addaction name="actionSobre_Qt"/>
+    <addaction name="action_about_Qt"/>
    </widget>
    <widget class="QMenu" name="menu_Calend_rio">
     <property name="title">
@@ -578,7 +578,7 @@ p, li { white-space: pre-wrap; }
     <string>F1</string>
    </property>
   </action>
-  <action name="actionSobre_Qt">
+  <action name="action_about_Qt">
    <property name="icon">
     <iconset resource="images.qrc">
      <normaloff>:/icons/Qtcreator_Faenza.svg</normaloff>:/icons/Qtcreator_Faenza.svg</iconset>
