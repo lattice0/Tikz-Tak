@@ -234,17 +234,14 @@
    <zorder>aulasLabel</zorder>
    <zorder>form_notas</zorder>
   </widget>
-  <widget class="QDialogButtonBox" name="buttonBoxOK">
+  <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>335</x>
-     <y>215</y>
+     <x>340</x>
+     <y>210</y>
      <width>166</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
    </property>
    <property name="standardButtons">
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>

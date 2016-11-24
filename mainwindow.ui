@@ -32,8 +32,8 @@
    </size>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>:/icons/tikz-tak-cal.svg</normaloff>:/icons/tikz-tak-cal.svg</iconset>
+   <iconset resource="images.qrc">
+    <normaloff>:/icons/tikz-tak.svg</normaloff>:/icons/tikz-tak.svg</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="layoutWidget">
@@ -67,7 +67,7 @@
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-image: url(:/icons/tikz-tak.png);</string>
+        <string notr="true">image: url(:/icons/tikz-tak-calendar.svg);</string>
        </property>
        <property name="frameShape">
         <enum>QFrame::NoFrame</enum>
@@ -96,8 +96,8 @@
         <string>Novo Projeto</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>:/icons/document-new.png</normaloff>:/icons/document-new.png</iconset>
+        <iconset resource="images.qrc">
+         <normaloff>:/icons/Gnome-document-new.svg</normaloff>:/icons/Gnome-document-new.svg</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -121,8 +121,8 @@
         <string>Salvar Projeto</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>:/icons/document-save.png</normaloff>:/icons/document-save.png</iconset>
+        <iconset resource="images.qrc">
+         <normaloff>:/icons/Gnome-document-save.svg</normaloff>:/icons/Gnome-document-save.svg</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -146,8 +146,8 @@
         <string>Abrir Projeto</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>:/icons/document-open.png</normaloff>:/icons/document-open.png</iconset>
+        <iconset resource="images.qrc">
+         <normaloff>:/icons/Gnome-document-open.svg</normaloff>:/icons/Gnome-document-open.svg</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -171,7 +171,7 @@
         <string>Inserir Calendário</string>
        </property>
        <property name="icon">
-        <iconset>
+        <iconset resource="images.qrc">
          <normaloff>:/icons/evolution-calendar.svg</normaloff>:/icons/evolution-calendar.svg</iconset>
        </property>
        <property name="iconSize">
@@ -207,7 +207,7 @@
         <string>Gerar Calendário</string>
        </property>
        <property name="icon">
-        <iconset>
+        <iconset resource="images.qrc">
          <normaloff>:/icons/application-pdf.svg</normaloff>:/icons/application-pdf.svg</iconset>
        </property>
        <property name="iconSize">
@@ -255,8 +255,8 @@
         <string>Configurar</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>:/icons/application-default-icon.svg</normaloff>:/icons/application-default-icon.svg</iconset>
+        <iconset resource="images.qrc">
+         <normaloff>:/icons/Gnome-preferences-system.svg</normaloff>:/icons/Gnome-preferences-system.svg</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -275,8 +275,8 @@
         <string>Sobre o TikZ-TaK</string>
        </property>
        <property name="icon">
-        <iconset>
-         <normaloff>:/icons/help-about.png</normaloff>:/icons/help-about.png</iconset>
+        <iconset resource="images.qrc">
+         <normaloff>:/icons/Gnome-help-about.svg</normaloff>:/icons/Gnome-help-about.svg</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -285,7 +285,7 @@
         </size>
        </property>
        <property name="checkable">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="checked">
         <bool>false</bool>
@@ -329,8 +329,8 @@
      <string>Sair</string>
     </property>
     <property name="icon">
-     <iconset>
-      <normaloff>:/icons/application-exit.png</normaloff>:/icons/application-exit.png</iconset>
+     <iconset resource="images.qrc">
+      <normaloff>:/icons/Gnome-application-exit.svg</normaloff>:/icons/Gnome-application-exit.svg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -342,7 +342,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="helpbox">
+   <widget class="QTextBrowser" name="previewPDF">
     <property name="geometry">
      <rect>
       <x>195</x>
@@ -403,6 +403,19 @@ p, li { white-space: pre-wrap; }
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>560</y>
+      <width>59</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -420,11 +433,8 @@ p, li { white-space: pre-wrap; }
     <addaction name="action_config"/>
     <addaction name="separator"/>
     <addaction name="actionManual_do_Usuario"/>
-    <addaction name="action_Licen_a"/>
-    <addaction name="action_Vers_o_0_1"/>
     <addaction name="action_about"/>
     <addaction name="actionSobre_Qt"/>
-    <addaction name="actionDock"/>
    </widget>
    <widget class="QMenu" name="menu_Calend_rio">
     <property name="title">
@@ -457,8 +467,8 @@ p, li { white-space: pre-wrap; }
   </widget>
   <action name="action_openCal">
    <property name="icon">
-    <iconset theme="document-open">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Gnome-document-open.svg</normaloff>:/icons/Gnome-document-open.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Abrir Projeto...</string>
@@ -469,8 +479,8 @@ p, li { white-space: pre-wrap; }
   </action>
   <action name="action_saveCal">
    <property name="icon">
-    <iconset theme="document-save">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Gnome-document-save.svg</normaloff>:/icons/Gnome-document-save.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Salvar Projeto...</string>
@@ -481,7 +491,7 @@ p, li { white-space: pre-wrap; }
   </action>
   <action name="action_makeCal">
    <property name="icon">
-    <iconset>
+    <iconset resource="images.qrc">
      <normaloff>:/icons/application-pdf.svg</normaloff>:/icons/application-pdf.svg</iconset>
    </property>
    <property name="text">
@@ -491,29 +501,19 @@ p, li { white-space: pre-wrap; }
     <string>Ctrl+G</string>
    </property>
   </action>
-  <action name="action_Licen_a">
-   <property name="text">
-    <string>Licença</string>
-   </property>
-  </action>
   <action name="action_about">
    <property name="icon">
-    <iconset theme="help-about">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Gnome-help-about.svg</normaloff>:/icons/Gnome-help-about.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Sobre o TikZ-TaK</string>
    </property>
   </action>
-  <action name="action_Vers_o_0_1">
-   <property name="text">
-    <string>Versão 0.1</string>
-   </property>
-  </action>
   <action name="action_newCal">
    <property name="icon">
-    <iconset theme="document-new">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Gnome-document-new.svg</normaloff>:/icons/Gnome-document-new.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Novo Projeto</string>
@@ -535,7 +535,7 @@ p, li { white-space: pre-wrap; }
   </action>
   <action name="action_addCal">
    <property name="icon">
-    <iconset>
+    <iconset resource="images.qrc">
      <normaloff>:/icons/evolution-calendar.svg</normaloff>:/icons/evolution-calendar.svg</iconset>
    </property>
    <property name="text">
@@ -547,8 +547,8 @@ p, li { white-space: pre-wrap; }
   </action>
   <action name="action_config">
    <property name="icon">
-    <iconset theme="applications-system">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Gnome-preferences-system.svg</normaloff>:/icons/Gnome-preferences-system.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Configurar</string>
@@ -556,8 +556,8 @@ p, li { white-space: pre-wrap; }
   </action>
   <action name="action_close">
    <property name="icon">
-    <iconset theme="exit">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Gnome-application-exit.svg</normaloff>:/icons/Gnome-application-exit.svg</iconset>
    </property>
    <property name="text">
     <string>&amp;Fechar</string>
@@ -567,22 +567,30 @@ p, li { white-space: pre-wrap; }
    </property>
   </action>
   <action name="actionManual_do_Usuario">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Gnome-help-contents.svg</normaloff>:/icons/Gnome-help-contents.svg</iconset>
+   </property>
    <property name="text">
     <string>Manual do Usuário</string>
    </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
   </action>
   <action name="actionSobre_Qt">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Qtcreator_Faenza.svg</normaloff>:/icons/Qtcreator_Faenza.svg</iconset>
+   </property>
    <property name="text">
     <string>Sobre o &amp;Qt</string>
    </property>
   </action>
-  <action name="actionDock">
-   <property name="text">
-    <string>dock</string>
-   </property>
-  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>action_about</sender>
@@ -619,7 +627,7 @@ p, li { white-space: pre-wrap; }
   <connection>
    <sender>about</sender>
    <signal>toggled(bool)</signal>
-   <receiver>helpbox</receiver>
+   <receiver>previewPDF</receiver>
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">

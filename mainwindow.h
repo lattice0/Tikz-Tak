@@ -1,7 +1,15 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+
+#define VERSAO "0.1"
+#define THIAGO "Thiago de Melo"
+#define LUCAS "Lucas Zanella"
+#define TIKZTAK "TikZ-TaK"
+
 #include "windowaddcal.h"
 #include "ui_mainwindow.h"
+#include "aboutx.h"
+#include "about.h"
 
 class MainWindow : public QMainWindow, private Ui::MainWindow
 {
@@ -14,6 +22,7 @@ public slots:
     void algumaCoisa();
     void insertCalendar();
     void on_sair_released();
+    void fc_about();
 private:
     Ui::MainWindow *ui;
     WindowAddCal *addCalendar;
