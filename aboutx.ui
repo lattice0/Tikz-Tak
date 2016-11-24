@@ -24,7 +24,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>5</number>
+      <number>2</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
@@ -254,7 +254,7 @@
      <widget class="QWidget" name="translationTab">
       <attribute name="icon">
        <iconset resource="images.qrc">
-        <normaloff>:/icons/Flag-br.svg</normaloff>:/icons/Flag-br.svg</iconset>
+        <normaloff>:/icons/Gnome-preferences-desktop-locale.svg</normaloff>:/icons/Gnome-preferences-desktop-locale.svg</iconset>
       </attribute>
       <attribute name="title">
        <string>Translators</string>
@@ -282,6 +282,10 @@
       </layout>
      </widget>
      <widget class="QWidget" name="licenseTab">
+      <attribute name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/Gnome-application-certificate.svg</normaloff>:/icons/Gnome-application-certificate.svg</iconset>
+      </attribute>
       <attribute name="title">
        <string>License</string>
       </attribute>
@@ -304,6 +308,10 @@
       </layout>
      </widget>
      <widget class="QWidget" name="librariesTab">
+      <attribute name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/icons/Gnome-emblem-system.svg</normaloff>:/icons/Gnome-emblem-system.svg</iconset>
+      </attribute>
       <attribute name="title">
        <string>Libraries</string>
       </attribute>

@@ -11,6 +11,7 @@ AboutDlg::AboutDlg(QDialog *parent) :
     setWindowTitle(QString::fromUtf8("Sobre %1 versao %2").arg(TIKZTAK).arg(VERSAO));
     ui->tw_tabs->setCurrentIndex(0);
 
+    // about tab
     ui->textBrowser->setHtml(
                 QString::fromUtf8(
                     "<p align=\"center\"><span style=\"font-size:20pt; font-weight:600;\">%1<sup>(calendar)</sup><br/>"
@@ -23,7 +24,7 @@ AboutDlg::AboutDlg(QDialog *parent) :
 //                    "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lectutiam eleifend dapibus est non eleifend. Morbi placerat mauris eu neque egestas finibus.")
                         );
 
-    // author's tab
+    // author tab
     ui->groupBox_thiago->setTitle(THIAGO);
     ui->label_17->setText(QString("<a href=\"http://%1\">%1</a>").arg(THIAGOWEB));
     ui->label_19->setText(QString("<a href=\"mailto:%1\">%1</a>").arg(THIAGOEMAIL));
@@ -32,7 +33,7 @@ AboutDlg::AboutDlg(QDialog *parent) :
     ui->label_2->setText(QString("<a href=\"http://%1\">%1</a>").arg(LUCASWEB));
     ui->label_6->setText(QString("<a href=\"mailto:%1\">%1</a>").arg(LUCASEMAIL));
 
-    // libraries' tab
+    // libraries tab
     ui->label->setText(QString("%1 was built with the following libraries:").arg(TIKZTAK));
     ui->label_11->setText(qVersion());
 

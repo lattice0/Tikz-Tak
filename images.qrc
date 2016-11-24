@@ -18,5 +18,8 @@
         <file>icons/bg-steel.jpg</file>
         <file>icons/Flag-br.svg</file>
         <file>icons/System-users.svg</file>
+        <file>icons/Gnome-application-certificate.svg</file>
+        <file>icons/Gnome-emblem-system.svg</file>
+        <file>icons/Gnome-preferences-desktop-locale.svg</file>
     </qresource>
 </RCC>
