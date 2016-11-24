@@ -12,6 +12,7 @@
 
 MainWindow::MainWindow(QWidget *parent)
 {
+    setAttribute(Qt::WA_DeleteOnClose);
     Q_UNUSED(parent);
     setupUi(this);
 
