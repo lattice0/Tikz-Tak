@@ -18,11 +18,13 @@ int main(int argc, char *argv[])
     outfile.close();
 
     QApplication app(argc, argv);
+
     QTranslator translator;
     translator.load("tikz-tak_en");
-//    app.installTranslator(&translator);
-    if (translator.load(QLocale(), QLatin1String("tikz-tak"), QLatin1String("_"), QLatin1String(":/translations")))
-            app.installTranslator(&translator);
+    app.installTranslator(&translator);
+
+//    if (translator.load(QLocale(), QLatin1String("tikz-tak"), QLatin1String("_"), QLatin1String(":/translations")))
+//            app.installTranslator(&translator);
 
     MainWindow *mainWindow = new MainWindow;
 
@@ -46,6 +48,7 @@ int main(int argc, char *argv[])
     mainWindow->statusBar()->addWidget(statusWelcomeMSG);
     mainWindow->statusBar()->addPermanentWidget(statusBuilt);
     mainWindow->statusBar()->addWidget(statusBlank,2);
+//    mainWindow->statusBar()->showMessage(tr("aqui"));
 
     mainWindow->show();
 
