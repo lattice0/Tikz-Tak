@@ -9,6 +9,7 @@ AboutDlg::AboutDlg(QDialog *parent) :
 {
     ui->setupUi(this);
     setWindowTitle(QString::fromUtf8("Sobre %1 versao %2").arg(TIKZTAK).arg(VERSAO));
+    ui->tw_tabs->setCurrentIndex(0);
 
     ui->textBrowser->setHtml(
                 QString::fromUtf8(
@@ -24,11 +25,15 @@ AboutDlg::AboutDlg(QDialog *parent) :
 
     // author's tab
     ui->groupBox_thiago->setTitle(THIAGO);
-    ui->label_17->setText(THIAGOWEB); // <a href=\"http://www.rc.unesp.br/tmelo\">www.rc.unesp.br/tmelo</a> // nao sei se da pra inserir
+    ui->label_17->setText(QString("<a href=\"http://%1\">%1</a>").arg(THIAGOWEB));
+    ui->label_19->setText(QString("<a href=\"mailto:%1\">%1</a>").arg(THIAGOEMAIL));
+
     ui->groupBox_lucas->setTitle(LUCAS);
-    ui->label_2->setText(LUCASWEB);
+    ui->label_2->setText(QString("<a href=\"http://%1\">%1</a>").arg(LUCASWEB));
+    ui->label_6->setText(QString("<a href=\"mailto:%1\">%1</a>").arg(LUCASEMAIL));
 
     // libraries' tab
+    ui->label->setText(QString("%1 was built with the following libraries:").arg(TIKZTAK));
     ui->label_11->setText(qVersion());
 
 

@@ -6,9 +6,12 @@
 
 #define THIAGO "Thiago de Melo"
 #define THIAGOWEB "www.rc.unesp.br/tmelo"
+#define THIAGOEMAIL "tmelo@rc.unesp.br"
 
 #define LUCAS "Lucas Zanella"
 #define LUCASWEB "<insert>"
+#define LUCASEMAIL "<insert>"
+
 
 
 #include "windowaddcal.h"
