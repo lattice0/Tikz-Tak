@@ -18,7 +18,9 @@ HEADERS += \
     aboutx.h \
     about.h
 
-DISTFILES +=
+DISTFILES += \
+    translations/tikz-tak_en.qm \
+    translations/tikz-tak_en.ts
 
 FORMS += \
     mainwindow.ui \
