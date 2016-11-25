@@ -247,19 +247,6 @@
     <set>QDialogButtonBox::Apply|QDialogButtonBox::Ignore</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonSaveData">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>205</y>
-     <width>80</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>salvar</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>

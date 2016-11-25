@@ -15,7 +15,7 @@ WindowAddCal::WindowAddCal(QWidget *parent)
 //    QPushButton *button = new QPushButton();
 //    button->setText("Apply");
 
-    QFile data("output.txt");
+/*    QFile data("output.txt");
     // open file
     if (!data.open(QFile::WriteOnly | QFile::Truncate)) {
 
@@ -25,7 +25,7 @@ WindowAddCal::WindowAddCal(QWidget *parent)
     }
     // attach file to QTextStream
     QTextStream out(&data);
-
+*/
 
 }
 

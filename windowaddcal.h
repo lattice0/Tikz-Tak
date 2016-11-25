@@ -16,7 +16,6 @@ private slots:
     //void on_inputSpinBox2_valueChanged(int value);
 
     void on_form_curso_editingFinished();
-    void buttonSaveData();
 
 private:
     Ui::Dialog ui;

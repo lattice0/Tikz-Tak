@@ -27,9 +27,9 @@ int main(int argc, char *argv[])
 //            app.installTranslator(&translator);
 
 
-// create dir
+// create dir to be used with temp files
     QDir mDir;
-    mDir.mkpath("/tmp/tikz");
+    mDir.mkpath("/tmp/tikz-tak");
 
 
     MainWindow *mainWindow = new MainWindow;
