@@ -17,7 +17,6 @@
 #include "windowaddcal.h"
 #include "ui_mainwindow.h"
 #include "aboutx.h"
-#include "about.h"
 
 class MainWindow : public QMainWindow, private Ui::MainWindow
 {
@@ -29,7 +28,6 @@ protected:
         void closeEvent(QCloseEvent *event);
 public slots:
     void compileFile();
-    void algumaCoisa();
     void insertCalendar();
     void on_sair_released();
     void fc_about();

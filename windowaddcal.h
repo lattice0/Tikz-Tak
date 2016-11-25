@@ -1,5 +1,6 @@
 #ifndef WINDOWADDCAL_H
 #define WINDOWADDCAL_H
+
 #include"QWidget"
 #include"ui_windowaddcal.h"
 

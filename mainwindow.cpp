@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     Q_UNUSED(parent);
     setupUi(this);
 
-    setWindowTitle(QString::fromUtf8("%1 (calendar) v%2").arg(TIKZTAK).arg(VERSAO));
+    setWindowTitle(QString(tr("%1 (calendar) v%2")).arg(TIKZTAK).arg(VERSAO));
 
     previewPDF->hide();
     // Connect button signal to appropriate slot
@@ -28,15 +28,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(action_about_Qt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(action_addCal, SIGNAL(triggered()),this, SLOT(insertCalendar()));
 
-
-
 }
 
 void MainWindow::compileFile()
 {
-    // change the text
-    //compileButton->setText("Pronto!");
-
     QProcess *process = new QProcess(this);
     QString program = "pdflatex";
     QString path = QDir().absolutePath()+"/a.tex";
@@ -45,13 +40,13 @@ void MainWindow::compileFile()
 }
 
 
-void MainWindow::algumaCoisa()
-{
-    QMessageBox::information(
-        this,
-        tr("Tikz-TaK"),
-        tr("Alguma coisa!") );
-}
+//void MainWindow::algumaCoisa()
+//{
+//    QMessageBox::information(
+//        this,
+//        tr("Tikz-TaK"),
+//        tr("Alguma coisa!") );
+//}
 
 void MainWindow::insertCalendar()
 {
@@ -65,7 +60,7 @@ void MainWindow::closeEvent(QCloseEvent *event)
     QMessageBox::StandardButton dialogExit;
     dialogExit = QMessageBox::warning(this,
                tr("Confirmação de Saída"),
-               "Deseja realmente fechar o TikZ-TaK? Projetos não salvos serão perdidos.",
+               tr("Deseja realmente fechar o %1? Projetos não salvos serão perdidos.").arg(TIKZTAK),
              QMessageBox::Ok | QMessageBox::Cancel);
     if( dialogExit == QMessageBox::Ok) {
         close();
@@ -81,8 +76,6 @@ void MainWindow::on_sair_released(){
 void MainWindow::fc_about()
 {
    AboutDlg* myAboutx = new AboutDlg();
-//   About* myAbout = new About();
 
    myAboutx->show();
-//   myAbout->show();
 }

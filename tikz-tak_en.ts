@@ -4,54 +4,39 @@
 <context>
     <name>About</name>
     <message>
-        <location filename="about.ui" line="79"/>
-        <source>OK</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="about.cpp" line="17"/>
         <source>Criador de calend&amp;aacute;rios&lt;br/&gt;GUI para o pacote L&lt;sup&gt;A&lt;/sup&gt;T&lt;sub&gt;E&lt;/sub&gt;X &lt;code&gt;tikz-tak.sty&lt;/code&gt;&lt;br/&gt;</source>
-        <translation variants="yes">
+        <translation type="vanished" variants="yes">
             <lengthvariant>Calendar Creator&lt;br/&gt;GUI for L&lt;sup&gt;A&lt;/sup&gt;T&lt;sub&gt;E&lt;/sub&gt;X package &lt;code&gt;tikz-tak.sty&lt;/code&gt;&lt;br/&gt;</lengthvariant>
             <lengthvariant></lengthvariant>
         </translation>
-    </message>
-    <message>
-        <location filename="about.cpp" line="20"/>
-        <source>Built on %1 %2&lt;br&gt;Using Qt Version %3</source>
-        <translation></translation>
     </message>
 </context>
 <context>
     <name>AboutDlg</name>
     <message>
-        <location filename="aboutx.ui" line="18"/>
-        <location filename="aboutx.ui" line="38"/>
-        <source>About</source>
-        <translation></translation>
-    </message>
-    <message>
         <location filename="aboutx.ui" line="67"/>
-        <source>Authors</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="aboutx.ui" line="73"/>
-        <location filename="aboutx.ui" line="143"/>
-        <source>AUTHOR</source>
-        <translation type="unfinished"></translation>
+        <source>Autores</source>
+        <oldsource>Authors</oldsource>
+        <translation>Authors</translation>
     </message>
     <message>
         <location filename="aboutx.ui" line="79"/>
         <location filename="aboutx.ui" line="149"/>
-        <source>Brazil</source>
-        <translation></translation>
+        <source>Brasil</source>
+        <oldsource>Brazil</oldsource>
+        <translation>Brazil</translation>
+    </message>
+    <message>
+        <location filename="aboutx.ui" line="18"/>
+        <location filename="aboutx.ui" line="38"/>
+        <source>Sobre</source>
+        <translation>About</translation>
     </message>
     <message>
         <location filename="aboutx.ui" line="96"/>
         <location filename="aboutx.ui" line="193"/>
-        <source>Nationality:</source>
-        <translation></translation>
+        <source>Pais:</source>
+        <translation>Country:</translation>
     </message>
     <message>
         <location filename="aboutx.ui" line="103"/>
@@ -67,28 +52,40 @@
     </message>
     <message>
         <location filename="aboutx.ui" line="230"/>
-        <source>Thanks</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="aboutx.ui" line="260"/>
-        <source>Translators</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="aboutx.ui" line="290"/>
-        <source>License</source>
-        <translation></translation>
+        <source>Agradecimentos</source>
+        <translation>Thanks</translation>
     </message>
     <message>
         <location filename="aboutx.ui" line="316"/>
-        <source>Libraries</source>
-        <translation></translation>
+        <source>Bibliotecas</source>
+        <translation>Libraries</translation>
+    </message>
+    <message>
+        <location filename="aboutx.ui" line="260"/>
+        <source>Tradutores</source>
+        <oldsource>Translators</oldsource>
+        <translation>Translators</translation>
+    </message>
+    <message>
+        <location filename="aboutx.ui" line="290"/>
+        <source>Licença</source>
+        <oldsource>License</oldsource>
+        <translation>License</translation>
     </message>
     <message>
         <location filename="aboutx.ui" line="322"/>
         <source>?? was built with the following libraries:</source>
         <translation></translation>
+    </message>
+    <message>
+        <location filename="aboutx.cpp" line="11"/>
+        <source>Sobre %1 versao %2</source>
+        <translation>About %1 version %2</translation>
+    </message>
+    <message>
+        <location filename="aboutx.cpp" line="17"/>
+        <source>&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot;font-size:20pt; font-weight:600;&quot;&gt;%1&lt;sup&gt;(calendar)&lt;/sup&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12pt;&quot;&gt;Vers&amp;atilde;o v%2&lt;/span&gt;&lt;/span&gt;&lt;br/&gt;</source>
+        <translation>&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot;font-size:20pt; font-weight:600;&quot;&gt;%1&lt;sup&gt;(calendar)&lt;/sup&gt;&lt;br/&gt;&lt;span style=&quot;font-size:12pt;&quot;&gt;Version v%2&lt;/span&gt;&lt;/span&gt;&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="aboutx.cpp" line="19"/>
@@ -99,9 +96,20 @@
         </translation>
     </message>
     <message>
+        <location filename="aboutx.cpp" line="21"/>
+        <source>&lt;p align=&quot;center&quot;&gt;Desenvolvido por&lt;br&gt;%1 e %2&lt;br/&gt;&lt;span style=&quot;font-size:8pt;&quot;&gt;Copyright (C) 2016&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;</source>
+        <translation>&lt;p align=&quot;center&quot;&gt;Developed by&lt;br&gt;%1 and %2&lt;br/&gt;&lt;span style=&quot;font-size:8pt;&quot;&gt;Copyright (C) 2016&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;</translation>
+    </message>
+    <message>
         <location filename="aboutx.cpp" line="22"/>
-        <source>&lt;p align=&quot;center&quot;&gt;Built on %1 %2&lt;br&gt;Using Qt Version %3</source>
-        <translation></translation>
+        <source>&lt;p align=&quot;center&quot;&gt;Compilado em %1 %2&lt;br&gt;com Qt Vers&amp;atilde;o %3</source>
+        <oldsource>&lt;p align=&quot;center&quot;&gt;Built on %1 %2&lt;br&gt;Using Qt Version %3</oldsource>
+        <translation>&lt;p align=&quot;center&quot;&gt;Built on %1 %2&lt;br&gt;Compiled with Qt Version %3</translation>
+    </message>
+    <message>
+        <location filename="aboutx.cpp" line="35"/>
+        <source>%1 foi construído com as seguintes bibliotecas:</source>
+        <translation>%1 was built with the following libraries:</translation>
     </message>
 </context>
 <context>
@@ -119,17 +127,12 @@
     <message>
         <location filename="windowaddcal.ui" line="45"/>
         <source>Disciplina</source>
-        <translation type="unfinished"></translation>
+        <translation>Subject</translation>
     </message>
     <message>
         <location filename="windowaddcal.ui" line="58"/>
         <source>Período Letivo</source>
         <translation>Academic Date</translation>
-    </message>
-    <message>
-        <location filename="windowaddcal.ui" line="102"/>
-        <source>-</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="windowaddcal.ui" line="134"/>
@@ -256,7 +259,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="mainwindow.ui" line="474"/>
         <source>&amp;Abrir Projeto...</source>
-        <translation>&amp;Open Project</translation>
+        <translation>&amp;Open Project...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="477"/>
@@ -296,7 +299,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="mainwindow.ui" line="522"/>
         <source>Cria um novo projeto que poderá ter vários calendários.</source>
-        <translation>Create a new project which could contain many calendars</translation>
+        <translation>Create a new project which could contain many calendars.</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="533"/>
@@ -341,22 +344,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="mainwindow.ui" line="587"/>
         <source>Sobre o &amp;Qt</source>
-        <translation>About Qt</translation>
+        <translation>About &amp;Qt</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="52"/>
-        <source>Tikz-TaK</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="mainwindow.cpp" line="53"/>
-        <source>Alguma coisa!</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="mainwindow.cpp" line="67"/>
+        <location filename="mainwindow.cpp" line="62"/>
         <source>Confirmação de Saída</source>
         <translation>Exit Confirmation</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="63"/>
+        <source>Deseja realmente fechar o %1? Projetos não salvos serão perdidos.</source>
+        <translation>Do you really want to close %1? Unsaved projects would be lost.</translation>
     </message>
 </context>
 </TS>

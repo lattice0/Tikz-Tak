@@ -1,5 +1,5 @@
-#ifndef ABOUT_H
-#define ABOUT_H
+#ifndef ABOUTX_H
+#define ABOUTX_H
 
 #include <QDialog>
 
@@ -22,4 +22,4 @@ private:
     Ui::AboutDlg *ui;
 };
 
-#endif // ABOUT_H
+#endif // ABOUTX_H

@@ -10,20 +10,17 @@ SOURCES += \
     mainwindow.cpp \
     windowaddcal.cpp \
     aboutx.cpp \
-    about.cpp
 
 HEADERS += \
     mainwindow.h \
     windowaddcal.h \
     aboutx.h \
-    about.h
 
 
 FORMS += \
     mainwindow.ui \
     windowaddcal.ui \
     aboutx.ui \
-    about.ui
 
 RESOURCES = images.qrc
 

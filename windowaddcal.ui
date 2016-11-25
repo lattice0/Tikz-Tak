@@ -99,7 +99,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>-</string>
+         <string notr="true">-</string>
         </property>
         <property name="buddy">
          <cstring>form_periodoFim</cstring>
@@ -237,14 +237,14 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>280</x>
      <y>210</y>
-     <width>166</width>
+     <width>226</width>
      <height>23</height>
     </rect>
    </property>
    <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+    <set>QDialogButtonBox::Apply|QDialogButtonBox::Ignore</set>
    </property>
   </widget>
  </widget>
