@@ -90,8 +90,8 @@
     <message>
         <location filename="aboutx.cpp" line="19"/>
         <source>Criador de calend&amp;aacute;rios&lt;br/&gt;GUI para o pacote L&lt;sup&gt;A&lt;/sup&gt;T&lt;sub&gt;E&lt;/sub&gt;X &lt;code&gt;tikz-tak.sty&lt;/code&gt;&lt;br/&gt;</source>
-        <translation variants="yes">
-            <lengthvariant>Calendar Creator&lt;br/&gt;GUI for L&lt;sup&gt;A&lt;/sup&gt;T&lt;sub&gt;E&lt;/sub&gt;X package &lt;code&gt;tikz-tak.sty&lt;/code&gt;&lt;br/&gt;</lengthvariant>
+        <translation type="unfinished" variants="yes">
+            <lengthvariant>Calendar Creator&lt;br/&gt;GUI for L&lt;sup&gt;A&lt;/sup&gt;T&lt;sub&gt;E&lt;/sub&gt;X package &lt;code&gt;tikz-tak.sty&lt;/code&gt;&lt;br&gt;</lengthvariant>
             <lengthvariant></lengthvariant>
         </translation>
     </message>

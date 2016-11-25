@@ -35,22 +35,24 @@ int main(int argc, char *argv[])
                 "QStatusBar QLabel { border-left: 1px solid grey; margin-right: 1px; }"
                 );
 
-    QLabel *statusWelcomeMSG = new QLabel("Bem-vindo!");
+    // nao funciona com tr()
+    QLabel *statusWelcomeMSG = new QLabel("foo");
 ////    QString temp0 = QString(tr("Bem-vindo ao %1 (calendar)")).arg(TIKZTAK);
-////    statusWelcomeMSG-> setText("temp0");
-//    QString compilationDateTime = QString(tr("v%3 compilado em %1 %2")).arg(__DATE__).arg(__TIME__).arg(VERSAO);
-//    QString *temp1 = new QString(tr("Carregado em "));
+//    statusWelcomeMSG-> setText(tr("Bem-vindo!"));
+    QString compilationDateTime = QString(("v%3 compilado em %1 %2")).arg(__DATE__).arg(__TIME__).arg(VERSAO);
+//    QString *temp1 = new QString("Carregado em ");
 //    QString *temp2 = new QString(QDate::currentDate().toString(Qt::SystemLocaleDate));
 //    QLabel *statusDateTime = new QLabel();
 //    statusDateTime-> setText(temp1->append(temp2)); // not used yet
-//    QLabel *statusBuilt = new QLabel();
-//    statusBuilt->setText(compilationDateTime);
-//    QLabel *statusBlank = new QLabel();
+    QLabel *statusBuilt = new QLabel();
+    statusBuilt->setText(compilationDateTime);
+    QLabel *statusBlank = new QLabel();
 
     mainWindow->statusBar()->addWidget(statusWelcomeMSG);
-//    mainWindow->statusBar()->addPermanentWidget(statusBuilt);
-//    mainWindow->statusBar()->addWidget(statusBlank,2);
+    mainWindow->statusBar()->addPermanentWidget(statusBuilt);
+    mainWindow->statusBar()->addWidget(statusBlank,2);
 
+//    mainWindow->statusBar()->showMessage(("aqui!!!!"));
     mainWindow->show();
 
 

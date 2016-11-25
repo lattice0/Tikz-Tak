@@ -16,7 +16,7 @@ AboutDlg::AboutDlg(QDialog *parent) :
                 QString(
                     tr("<p align=\"center\"><span style=\"font-size:20pt; font-weight:600;\">%1<sup>(calendar)</sup><br/>"
                     "<span style=\"font-size:12pt;\">Vers&atilde;o v%2</span></span><br/>")).arg(TIKZTAK).arg(VERSAO)
-              + tr("Criador de calend&aacute;rios<br/>GUI para o pacote L<sup>A</sup>T<sub>E</sub>X <code>tikz-tak.sty</code><br/>")
+              + tr("Criador de calend&aacute;rios<br/>GUI para o pacote L<sup>A</sup>T<sub>E</sub>X <code>tikz-tak.sty</code><br>")
               + QString(
                     tr("<p align=\"center\">Desenvolvido por<br>%1 e %2<br/><span style=\"font-size:8pt;\">Copyright (C) 2016</span><br/></p>")).arg(THIAGO).arg(LUCAS)
               + tr("<p align=\"center\">Compilado em %1 %2<br>com Qt Vers&atilde;o %3").arg(__DATE__).arg(__TIME__).arg(qVersion())
