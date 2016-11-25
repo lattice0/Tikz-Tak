@@ -1,5 +1,6 @@
 TEMPLATE = app
 TARGET = TikZ-TaK
+CONFIG += c++11
 
 QT = core gui
 

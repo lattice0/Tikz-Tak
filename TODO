@@ -1,0 +1,18 @@
+instalar o programa em
+/usr/share/tikz-tak
+
+jogar o .desktop em
+/usr/share/applications
+ou
+~/.local/share/applications
+
+jogar o icone svg na mesma pasta de instalacao
+ou colocar nas pastas de icones
+por ex
+/usr/share/icons/highcolor/scalable/apps
+
+no .desktop precisa indicar o path do icone
+que foi escolhido acima
+tem como no .desktop só colocar o nome do icone
+mas nao sei como fazer  para que seja encontrado.
+se colocar o path todo, da certo

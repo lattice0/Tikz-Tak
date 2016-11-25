@@ -2,7 +2,7 @@
 
 #include<QApplication>
 #include<QTranslator>
-//#include<QString>
+#include<QDir>
 #include <fstream>
 
 int main(int argc, char *argv[])
@@ -25,6 +25,12 @@ int main(int argc, char *argv[])
 
 //    if (translator.load(QLocale(), QLatin1String("tikz-tak"), QLatin1String("_"), QLatin1String(":/translations")))
 //            app.installTranslator(&translator);
+
+
+// create dir
+    QDir mDir;
+    mDir.mkpath("/tmp/tikz");
+
 
     MainWindow *mainWindow = new MainWindow;
 

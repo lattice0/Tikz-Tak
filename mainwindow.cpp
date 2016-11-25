@@ -57,16 +57,17 @@ void MainWindow::insertCalendar()
 // redefinicao do close() para confirmacao
 void MainWindow::closeEvent(QCloseEvent *event)
 {
-    QMessageBox::StandardButton dialogExit;
-    dialogExit = QMessageBox::warning(this,
-               tr("Confirmação de Saída"),
-               tr("Deseja realmente fechar o %1? Projetos não salvos serão perdidos.").arg(TIKZTAK),
-             QMessageBox::Ok | QMessageBox::Cancel);
-    if( dialogExit == QMessageBox::Ok) {
-        close();
-    } else {
-        event->ignore();
-    }
+//    QMessageBox::StandardButton dialogExit;
+//    dialogExit = QMessageBox::warning(this,
+//               tr("Confirmação de Saída"),
+//               tr("Deseja realmente fechar o %1? Projetos não salvos serão perdidos.").arg(TIKZTAK),
+//             QMessageBox::Ok | QMessageBox::Cancel);
+//    if( dialogExit == QMessageBox::Ok) {
+//        close();
+//    } else {
+//        event->ignore();
+//    }
+    close();
 }
 
 void MainWindow::on_sair_released(){
