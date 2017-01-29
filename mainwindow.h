@@ -24,6 +24,7 @@ class MainWindow : public QMainWindow, private Ui::MainWindow
 
 public:
     MainWindow(QWidget *parent = 0);
+    QString curso, disciplina;
 protected:
         void closeEvent(QCloseEvent *event);
 public slots:

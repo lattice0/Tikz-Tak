@@ -2,7 +2,7 @@
 #include "windowaddcal.h"
 #include "aboutx.h"
 #include "about.h"
-
+#include <fstream>
 #include<QProcess>
 #include<QCoreApplication>
 #include<QMessageBox>
@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     previewPDF->hide();
     // Connect button signal to appropriate slot
-    //connect(compileButton, SIGNAL (released()), this, SLOT (compileFile()));
+    connect(compileButton, SIGNAL (released()), this, SLOT (compileFile()));
     //connect(algumaCoisaButton, SIGNAL (released()), this, SLOT (algumaCoisa()));
     connect(insertCalendarButton, SIGNAL (released()), this, SLOT (insertCalendar()));
     connect(about, SIGNAL (released()), this, SLOT (fc_about()));
@@ -32,6 +32,15 @@ MainWindow::MainWindow(QWidget *parent)
 
 void MainWindow::compileFile()
 {
+    std::ofstream outfile;
+
+    outfile.open("a.tex", std::ios_base::trunc);
+
+    outfile << std::string("\\documentclass[12pt]{article}")+
+               "\\begin{document}"+
+               "Hello world!"+" Curso escolhido: "+curso.toStdString()+" disciplina: "+disciplina.toStdString()+
+               "\\end{document}";
+    outfile.close();
     QProcess *process = new QProcess(this);
     QString program = "pdflatex";
     QString path = QDir().absolutePath()+"/a.tex";
@@ -51,7 +60,19 @@ void MainWindow::compileFile()
 void MainWindow::insertCalendar()
 {
    WindowAddCal* myWindow = new WindowAddCal();
-   myWindow->show();
+   if(myWindow->exec())
+   {
+       QString Opt1, Opt2, Opt3;
+       //myWindow->GetOptions(Opt1, Opt2, Opt3);
+       //DoSomethingWithThoseBooleans (Opt1, Opt2, Opt3);
+       curso = myWindow->curso;
+       disciplina = myWindow->disciplina;
+       /*
+       QMessageBox msgBox;
+           msgBox.setText("Curso escolhido: "+myWindow->curso);
+           msgBox.exec();
+       */
+   }
 }
 
 // redefinicao do close() para confirmacao

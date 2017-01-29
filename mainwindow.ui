@@ -42,7 +42,7 @@
       <x>10</x>
       <y>9</y>
       <width>172</width>
-      <height>426</height>
+      <height>480</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="leftPanel">
@@ -123,6 +123,23 @@
        <property name="icon">
         <iconset resource="images.qrc">
          <normaloff>:/icons/Gnome-document-save.svg</normaloff>:/icons/Gnome-document-save.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="compileButton">
+       <property name="text">
+        <string>Compilar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/icons/Dialog-apply.svg</normaloff>:/icons/Dialog-apply.svg</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -303,6 +320,7 @@
     <zorder>line</zorder>
     <zorder>about</zorder>
     <zorder>line_2</zorder>
+    <zorder>compileButton</zorder>
    </widget>
    <widget class="QPushButton" name="sair">
     <property name="geometry">
@@ -423,7 +441,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>20</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSobre">
